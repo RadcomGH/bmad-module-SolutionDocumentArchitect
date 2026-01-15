@@ -28,7 +28,7 @@ async function main(customProjectRoot) {
   const project_root = customProjectRoot || path.join(__dirname, '..');
 
   // Find all agent files
-  const agentFiles = await glob('src/{core,modules/*}/agents/*.agent.yaml', {
+  const agentFiles = await glob('src/**/*.agent.yaml', {
     cwd: project_root,
     absolute: true,
   });
