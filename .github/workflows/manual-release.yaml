@@ -126,7 +126,7 @@ jobs:
           npx bmad-method install
           ```
 
-          **Full Changelog**: https://github.com/bmad-code-org/bmad-module-creative-intelligence-suite/compare/${{ steps.version.outputs.previous_tag }}...v${{ steps.version.outputs.new_version }}
+          **Full Changelog**: https://github.com/RadcomGH/bmad-module-SolutionDocumentArchitect/compare/${{ steps.version.outputs.previous_tag }}...v${{ steps.version.outputs.new_version }}
           EOF
 
           # Output for GitHub Actions
@@ -182,7 +182,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 📦 Distribution" >> $GITHUB_STEP_SUMMARY
           echo "- **NPM**: Published with @latest tag" >> $GITHUB_STEP_SUMMARY
-          echo "- **GitHub Release**: https://github.com/bmad-code-org/bmad-module-creative-intelligence-suite/releases/tag/v${{ steps.version.outputs.new_version }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **GitHub Release**: https://github.com/RadcomGH/bmad-module-SolutionDocumentArchitect/releases/tag/v${{ steps.version.outputs.new_version }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### ✅ Installation" >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY

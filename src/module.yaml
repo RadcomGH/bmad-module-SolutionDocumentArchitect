@@ -1,24 +1,24 @@
-code: cis
-name: "CIS: Creative Innovation Suite"
-header: "BMad Creative Innovation Suite (CIS) Module"
-subheader: "Unleash your creativity with the BMad CIS!"
-description: ""
+code: sda
+name: "SDA: Solution Document Architect"
+header: "Dual-Audience Technical Documentation"
+subheader: "Create solution documents that satisfy both technical reviewers and business stakeholders through multi-agent collaboration and adversarial review."
+description: "Solution Document Architect produces dual-audience technical documentation through collaborative AI intelligence. The module orchestrates specialized agents to create documents that simultaneously satisfy technical R&D requirements and deliver compelling business value to stakeholders."
 default_selected: false # This module will not be selected by default for new installations
 
-visual_tools:
-  prompt:
-    - "What type of image generation would you like available?"
-  default: "intermediate"
-  result: "{value}"
-  multi-select:
-    - value: "mermaid"
-      label: "MERMAID: Diagram with mermaid, a markdown standard with no final layout control, easily understood by LLMs"
-    - value: "excalidraw"
-      label: "EXCALIDRAW: A format that can be easily modified after the fact, and can still be converted to a png if needed. Great for flowcharts, diagrams, or simple presentations"
-    - value: "gemini-nano"
-      label: "Nana-Banana: Pipe requests to and get image results back from Google Nano Banana"
-    - value: "other-image"
-      label: "None/Other: Will configure or use prompts manually with another image generator as needed"
+agents:
+  - catalyst
+  - visionary
+  - inventor
+  - chronicler
+  - envoy
+  - weaver
+  - client-advocate
+  - product-guard
+
+workflows:
+  - sda-main
+  - solution-investigation
+  - review-only
 
 # Variables from Core Config inserted:
 ## user_name

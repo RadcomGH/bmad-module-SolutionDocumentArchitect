@@ -3,7 +3,7 @@ const path = require('node:path');
 const chalk = require('chalk');
 
 /**
- * CIS Module Installer
+ * SDA Module Installer
  * Standard module installer function that executes after IDE installations
  *
  * @param {Object} options - Installation options
@@ -17,7 +17,7 @@ async function install(options) {
   const { projectRoot, config, installedIDEs, logger } = options;
 
   try {
-    logger.log(chalk.blue('🎨 Installing CIS Module...'));
+    logger.log(chalk.blue('📝 Installing SDA Module...'));
 
     // Create output directory if configured
     if (config['output_folder']) {
@@ -25,10 +25,10 @@ async function install(options) {
       const outputConfig = config['output_folder'].replace('{project-root}/', '');
       const outputPath = path.join(projectRoot, outputConfig);
       if (!(await fs.pathExists(outputPath))) {
-        logger.log(chalk.yellow(`Creating CIS output directory: ${outputConfig}`));
+        logger.log(chalk.yellow(`Creating SDA output directory: ${outputConfig}`));
         await fs.ensureDir(outputPath);
 
-        // Add any default CIS templates or assets here
+        // Add any default SDA templates or assets here
         const templatesSource = path.join(__dirname, 'assets');
         const templateFiles = await fs.readdir(templatesSource).catch(() => []);
 
@@ -46,39 +46,39 @@ async function install(options) {
 
     // Handle IDE-specific configurations if needed
     if (installedIDEs && installedIDEs.length > 0) {
-      logger.log(chalk.cyan(`Configuring CIS for IDEs: ${installedIDEs.join(', ')}`));
+      logger.log(chalk.cyan(`Configuring SDA for IDEs: ${installedIDEs.join(', ')}`));
 
-      // Add any IDE-specific CIS configurations here
+      // Add any IDE-specific SDA configurations here
       for (const ide of installedIDEs) {
         await configureForIDE(ide, projectRoot, config, logger);
       }
     }
 
-    logger.log(chalk.green('✓ CIS Module installation complete'));
+    logger.log(chalk.green('✓ SDA Module installation complete'));
     return true;
   } catch (error) {
-    logger.error(chalk.red(`Error installing CIS module: ${error.message}`));
+    logger.error(chalk.red(`Error installing SDA module: ${error.message}`));
     return false;
   }
 }
 
 /**
- * Configure CIS module for specific IDE
+ * Configure SDA module for specific IDE
  * @private
  */
 async function configureForIDE(ide) {
   // Add IDE-specific configurations here
   switch (ide) {
     case 'claude-code': {
-      // Claude Code specific CIS configurations
+      // Claude Code specific SDA configurations
       break;
     }
     case 'cursor': {
-      // Cursor specific CIS configurations
+      // Cursor specific SDA configurations
       break;
     }
     case 'windsurf': {
-      // Windsurf specific CIS configurations
+      // Windsurf specific SDA configurations
       break;
     }
     // Add more IDEs as needed
