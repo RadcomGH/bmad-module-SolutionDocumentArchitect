@@ -1,7 +1,7 @@
 # <!-- Powered by BMAD-CORE™ -->
 bundle:
-  name: Creative Squad
-  icon: 🎨
-  description: Innovation and Creative Excellence Team - Comprehensive creative development from ideation through narrative execution
+  name: SDA Documentation Team
+  icon: 📝
+  description: Solution Document Architect - Complete dual-audience documentation through multi-agent collaboration
 agents: "*"
 party: "./default-party.csv"
