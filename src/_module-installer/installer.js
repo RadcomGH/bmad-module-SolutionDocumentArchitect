@@ -18,8 +18,8 @@ async function install(options) {
   try {
     logger.log('📝 Installing SDA Module...');
 
-    // Create reference-docs directory structure
-    const refDocsPath = path.join(projectRoot, 'reference-docs');
+    // Create reference-docs directory structure at project root
+    const refDocsPath = path.resolve(projectRoot, 'reference-docs');
     const refDocsStructure = [
       'requirements/customer',
       'requirements/internal',
