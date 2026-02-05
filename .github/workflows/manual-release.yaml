@@ -60,9 +60,10 @@ jobs:
           echo "new_version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
           echo "previous_tag=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
 
-      - name: Update installer package.json
-        run: |
-          sed -i 's/"version": ".*"/"version": "${{ steps.version.outputs.new_version }}"/' tools/installer/package.json
+      # SDA module doesn't have a separate installer package.json
+      # - name: Update installer package.json
+      #   run: |
+      #     sed -i 's/"version": ".*"/"version": "${{ steps.version.outputs.new_version }}"/' tools/installer/package.json
 
       # TODO: Re-enable web bundles once tools/cli/bundlers/ is restored
       # - name: Generate web bundles
