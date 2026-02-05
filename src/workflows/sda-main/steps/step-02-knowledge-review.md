@@ -56,11 +56,11 @@ Using `grep_search` to find relevant content..."
 
 **Execute grep_search with user keywords:**
 - Search pattern: {keywords}
-- Include patterns: *.md, *.ts, *.py, *.js, *.java, *.go, *.rs, *.yaml, *.json
+- Include patterns: \*.md, \*.ts, \*.py, \*.js, \*.java, \*.go, \*.rs, \*.yaml, \*.json
 - Max results: 50
 
 **Execute file_search for common doc patterns:**
-- spec*, architecture*, design*, api*, readme*, *{subject_name}*
+- spec\*, architecture\*, design\*, api\*, readme\*, \*{subject_name}\*
 
 **Present scan progress:**
 "Found {N} files mentioning your keywords..."

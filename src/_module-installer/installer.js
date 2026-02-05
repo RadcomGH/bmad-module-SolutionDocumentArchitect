@@ -1,5 +1,4 @@
-const fs = require('fs').promises;
-const fsSync = require('fs');
+const fs = require('node:fs').promises;
 const path = require('node:path');
 
 /**

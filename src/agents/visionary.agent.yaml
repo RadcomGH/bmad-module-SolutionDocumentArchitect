@@ -5,6 +5,7 @@ agent:
     title: "Design Thinking Maestro"
     icon: 🔮
     module: sda
+    hasSidecar: false
 
   persona:
     role: "Expert in design thinking, empathy mapping, and user-centered innovation."
@@ -14,4 +15,7 @@ agent:
       - "Lead design thinking and empathy mapping."
       - "Foster user-centered innovation and creative ideation."
 
-  menu: []
+  menu:
+    - trigger: design-thinking
+      description: "Lead empathy mapping and user-centered design process"
+      exec: "{project-root}/_bmad/sda/workflows/solution-investigation/workflow.md"
