@@ -1,0 +1,10 @@
+# <!-- Powered by BMAD-CORE™ -->
+bundle:
+  name: Innovation Support Team
+  icon: 🧠
+  description: Discovery and solution refinement - Socratic questioning, design thinking, and creative problem-solving
+agents:
+  - catalyst
+  - visionary
+  - inventor
+party: "./default-party.csv"

@@ -1,0 +1,9 @@
+# <!-- Powered by BMAD-CORE™ -->
+bundle:
+  name: Review Board
+  icon: 🥊
+  description: Adversarial quality assurance from customer and R&D perspectives - stress-testing documents before finalization
+agents:
+  - client-advocate
+  - product-guard
+party: "./default-party.csv"

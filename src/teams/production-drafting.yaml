@@ -1,0 +1,11 @@
+# <!-- Powered by BMAD-CORE™ -->
+bundle:
+  name: Production & Drafting Team
+  icon: 🏗️
+  description: Creating dual-audience narratives with productive tension between technical and business perspectives
+agents:
+  - catalyst
+  - chronicler
+  - envoy
+  - weaver
+party: "./default-party.csv"

@@ -1,0 +1,8 @@
+# <!-- Powered by BMAD-CORE™ -->
+bundle:
+  name: Synthesis
+  icon: 🧵
+  description: Final unification and polish - Master agent orchestrating complete workflow with editorial authority
+agents:
+  - weaver
+party: "./default-party.csv"

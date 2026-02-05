@@ -1,7 +1,0 @@
-# <!-- Powered by BMAD-CORE™ -->
-bundle:
-  name: SDA Documentation Team
-  icon: 📝
-  description: Solution Document Architect - Complete dual-audience documentation through multi-agent collaboration
-agents: "*"
-party: "./default-party.csv"
