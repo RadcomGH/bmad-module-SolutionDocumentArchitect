@@ -1,6 +1,6 @@
-const fs = require('fs-extra');
+const fs = require('fs').promises;
+const fsSync = require('fs');
 const path = require('node:path');
-const chalk = require('chalk');
 
 /**
  * SDA Module Installer
@@ -17,36 +17,45 @@ async function install(options) {
   const { projectRoot, config, installedIDEs, logger } = options;
 
   try {
-    logger.log(chalk.blue('📝 Installing SDA Module...'));
+    logger.log('📝 Installing SDA Module...');
 
     // Create output directory if configured
     if (config['output_folder']) {
       // Strip {project-root}/ prefix if present
       const outputConfig = config['output_folder'].replace('{project-root}/', '');
       const outputPath = path.join(projectRoot, outputConfig);
-      if (!(await fs.pathExists(outputPath))) {
-        logger.log(chalk.yellow(`Creating SDA output directory: ${outputConfig}`));
-        await fs.ensureDir(outputPath);
+
+      try {
+        await fs.access(outputPath);
+      } catch {
+        logger.log(`Creating SDA output directory: ${outputConfig}`);
+        await fs.mkdir(outputPath, { recursive: true });
 
         // Add any default SDA templates or assets here
         const templatesSource = path.join(__dirname, 'assets');
-        const templateFiles = await fs.readdir(templatesSource).catch(() => []);
+        try {
+          const templateFiles = await fs.readdir(templatesSource);
 
-        for (const file of templateFiles) {
-          const source = path.join(templatesSource, file);
-          const dest = path.join(outputPath, file);
+          for (const file of templateFiles) {
+            const source = path.join(templatesSource, file);
+            const dest = path.join(outputPath, file);
 
-          if (!(await fs.pathExists(dest))) {
-            await fs.copy(source, dest);
-            logger.log(chalk.green(`✓ Added ${file}`));
+            try {
+              await fs.access(dest);
+            } catch {
+              await fs.copyFile(source, dest);
+              logger.log(`✓ Added ${file}`);
+            }
           }
+        } catch {
+          // No templates directory, skip
         }
       }
     }
 
     // Handle IDE-specific configurations if needed
     if (installedIDEs && installedIDEs.length > 0) {
-      logger.log(chalk.cyan(`Configuring SDA for IDEs: ${installedIDEs.join(', ')}`));
+      logger.log(`Configuring SDA for IDEs: ${installedIDEs.join(', ')}`);
 
       // Add any IDE-specific SDA configurations here
       for (const ide of installedIDEs) {
@@ -54,10 +63,10 @@ async function install(options) {
       }
     }
 
-    logger.log(chalk.green('✓ SDA Module installation complete'));
+    logger.log('✓ SDA Module installation complete');
     return true;
   } catch (error) {
-    logger.error(chalk.red(`Error installing SDA module: ${error.message}`));
+    logger.error(`Error installing SDA module: ${error.message}`);
     return false;
   }
 }
