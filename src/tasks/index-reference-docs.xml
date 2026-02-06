@@ -16,7 +16,7 @@
     <step n="2" title="Scan Reference Documents">
       <i>Recursively scan all subdirectories under {project-root}/reference-docs/</i>
       <i>List all files excluding hidden files (starting with .), the index itself, and README.md</i>
-      <i>Organize by the directory structure: requirements/customer, requirements/internal, design/architecture, etc.</i>
+      <i>Organize by the directory structure: 01-context-and-requirements, 02-architecture-and-design, 03-security-and-integrations, 04-operations-and-risks, 99-archive</i>
     </step>
 
     <step n="3" title="Extract Metadata">
@@ -37,7 +37,7 @@
     <step n="5" title="Generate Statistics">
       <i>Calculate:</i>
       <i>- Total document count</i>
-      <i>- Count by category (requirements, design, systems, solutions, context)</i>
+      <i>- Count by category (01-context-and-requirements, 02-architecture-and-design, 03-security-and-integrations, 04-operations-and-risks, 99-archive)</i>
       <i>- Count by file type</i>
     </step>
 
@@ -62,44 +62,32 @@
 # Last updated: 2026-02-05T12:34:56Z
 
 index:
-  requirements:
-    customer:
-      - path: customer/project-requirements.md
-        title: Project Requirements Document
-        last_modified: 2026-02-05
-        type: md
-    internal:
-      - path: internal/tech-specs.pdf
-        title: Technical Specifications
-        last_modified: 2026-02-03
-        type: pdf
-  design:
-    architecture:
-      - path: architecture/system-design.md
-        title: System Architecture Overview
-        last_modified: 2026-02-04
-        type: md
-    technical: []
-    decisions: []
-  systems:
-    current: []
-    legacy: []
-  solutions:
-    templates: []
-    archives: []
-  context:
-    domain: []
-    business: []
-    compliance: []
+  01-context-and-requirements:
+    - path: 01-context-and-requirements/project-requirements.md
+      title: Project Requirements Document
+      last_modified: 2026-02-05
+      type: md
+    - path: 01-context-and-requirements/business-context.pdf
+      title: Business Context Overview
+      last_modified: 2026-02-03
+      type: pdf
+  02-architecture-and-design:
+    - path: 02-architecture-and-design/system-design.md
+      title: System Architecture Overview
+      last_modified: 2026-02-04
+      type: md
+  03-security-and-integrations: []
+  04-operations-and-risks: []
+  99-archive: []
 
 statistics:
   total_documents: 3
   by_category:
-    requirements: 2
-    design: 1
-    systems: 0
-    solutions: 0
-    context: 0
+    01-context-and-requirements: 2
+    02-architecture-and-design: 1
+    03-security-and-integrations: 0
+    04-operations-and-risks: 0
+    99-archive: 0
   by_type:
     md: 2
     pdf: 1
@@ -128,23 +116,11 @@ statistics:
   <critical-context>
     <directory-structure>
       reference-docs/
-      ├── requirements/
-      │   ├── customer/
-      │   └── internal/
-      ├── design/
-      │   ├── architecture/
-      │   ├── technical/
-      │   └── decisions/
-      ├── systems/
-      │   ├── current/
-      │   └── legacy/
-      ├── solutions/
-      │   ├── templates/
-      │   └── archives/
-      └── context/
-          ├── domain/
-          ├── business/
-          └── compliance/
+      ├── 01-context-and-requirements/
+      ├── 02-architecture-and-design/
+      ├── 03-security-and-integrations/
+      ├── 04-operations-and-risks/
+      └── 99-archive/
     </directory-structure>
     <i>This structure is created by the SDA module installer and is expected to exist</i>
     <i>The index enables agents to discover and query available reference documents programmatically</i>

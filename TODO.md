@@ -14,6 +14,9 @@ This document tracks potential future enhancements and features for the Solution
 - [ ] **Integrate Pandoc**
   - [ ] Add conversion pipeline: `.md` → `.odt` → `.docx`
   - [ ] Add conversion pipeline: `.*` → `.md`
+  - [ ] Pandoc can't convert from pdf, so consider using one of the following
+    - https://github.com/datalab-to/marker
+    - https://github.com/microsoft/markitdown
   - Enable universal document format transformations
   - Support batch conversion operations
 

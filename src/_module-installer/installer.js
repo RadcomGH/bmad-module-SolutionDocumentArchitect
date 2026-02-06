@@ -21,18 +21,11 @@ async function install(options) {
     // Create reference-docs directory structure at project root
     const refDocsPath = path.resolve(projectRoot, 'reference-docs');
     const refDocsStructure = [
-      'requirements/customer',
-      'requirements/internal',
-      'design/architecture',
-      'design/technical',
-      'design/decisions',
-      'systems/current',
-      'systems/legacy',
-      'solutions/templates',
-      'solutions/archives',
-      'context/domain',
-      'context/business',
-      'context/compliance',
+      '01-context-and-requirements',
+      '02-architecture-and-design',
+      '03-security-and-integrations',
+      '04-operations-and-risks',
+      '99-archive',
     ];
 
     logger.log('Creating reference-docs directory structure...');
@@ -52,27 +45,15 @@ This directory contains reference materials used by the Solution Document Archit
 
 ## Directory Structure
 
-- **requirements/** - Customer and internal requirements documents
-  - **customer/** - External customer requirements
-  - **internal/** - Internal requirements & specifications
-  
-- **design/** - Internal design documents
-  - **architecture/** - System architecture documents
-  - **technical/** - Technical design specifications
-  - **decisions/** - Architecture Decision Records (ADRs)
-  
-- **systems/** - System descriptions & documentation
-  - **current/** - Current system state documentation
-  - **legacy/** - Legacy system documentation
-  
-- **solutions/** - Prior solution documents
-  - **templates/** - Solution document templates
-  - **archives/** - Historical/reference solutions
-  
-- **context/** - Business & domain context
-  - **domain/** - Domain knowledge documents
-  - **business/** - Business requirements/context
-  - **compliance/** - Regulatory & compliance documents
+- **01-context-and-requirements/** - Business context, stakeholders, high-level goals, functional + non-functional requirements, use cases
+
+- **02-architecture-and-design/** - HLD/LLD, diagrams, data flows, key design decisions and tradeoffs (ADRs)
+
+- **03-security-and-integrations/** - Auth/SSO/IAM, data protection, compliance notes, external system integrations, APIs, protocols
+
+- **04-operations-and-risks/** - Runbooks, monitoring, scaling, SLAs/SLIs/SLOs, risk/assumption logs, open issues
+
+- **99-archive/** - Superseded or historical reference material
 
 ## Usage
 
