@@ -25,8 +25,8 @@ version: 1.0.0
 This workflow provides adversarial review through three steps:
 
 1. **Document Loading** — Load existing document and set review focus
-2. **Adversarial Review** — Value Analyst + Product Manager challenge document
-3. **Review Report** — Compile findings, recommendations, and action items
+2. **Adversarial Review** — Value Analyst + Product Manager challenge document, including fresh-reader testing
+3. **Review Report** — Compile findings, recommendations, action items, and reader-test results
 
 ---
 

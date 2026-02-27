@@ -120,6 +120,15 @@ Done. Value Narrator, does this communicate value?'"
 - Audience configuration
 - Agent's perspective and style'
 
+**Evidence Expansion and Gap Closure (before drafting):**
+- Map each claim to a source or validated memory
+- Note dependencies and constraints that must be stated
+- Identify risks and mitigations relevant to the section
+- Capture any open questions as explicit gaps
+
+{If critical evidence is missing}
+"Flag missing evidence and ask targeted questions to fill gaps before finalizing the section."
+
 {Draft 3-8 paragraphs with appropriate formatting}
 
 Done. {support_agent}, your review?"
@@ -141,6 +150,10 @@ Done. {support_agent}, your review?"
 - Audience mismatch: {flag overly technical language}
 
 {Flag any contradictions with earlier sections}'"
+
+**Evidence Check:**
+- Are claims traceable to sources or validated memories?
+- Are constraints and assumptions stated where needed?
 
 **Solution Consultant Coordination:**
 
@@ -247,6 +260,7 @@ Done.'"
 ✅ Both perspectives integrated
 ✅ Cross-references validated
 ✅ Formatting applied
+✅ Claims traced to sources or validated memories
 ✅ No contradictions between sections
 
 **Saving complete draft...**

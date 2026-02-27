@@ -155,6 +155,23 @@ Create structured report:
 
 ---
 
+## Fresh-Reader Testing Results
+
+**Reader Question Set:**
+{List 5-10 reader questions}
+
+**Comprehension Issues Found:**
+- {Ambiguity}
+- {Unstated assumptions}
+- {Contradictions}
+- {Missing business impact}
+- {Missing technical feasibility anchors}
+
+**Section-Level Fixes:**
+{Map issues to sections with recommended edits}
+
+---
+
 ## Actionable Recommendations
 
 ### Immediate Actions (Before Publication)

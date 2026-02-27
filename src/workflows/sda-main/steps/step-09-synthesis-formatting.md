@@ -217,6 +217,7 @@ status: Final
 - Version numbers current?
 - Examples tested/valid?
 - Statistics and metrics sourced?
+- Review Board reader-test findings addressed?
 
 ✅ **Readability:**
 - Appropriate length for audience? ({estimated_pages} pages)

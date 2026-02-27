@@ -83,6 +83,9 @@ workflowType: 'sda-main'
 subject_name: ''
 primary_audience: ''      # Customer | R&D
 secondary_audience: ''    # Customer | R&D
+structured_context: false
+evidence_refinement_level: ''  # light | full | deep
+reader_testing_requirement: '' # optional | required
 knowledge_validated: false
 outline_approved: false
 drafting_complete: false
