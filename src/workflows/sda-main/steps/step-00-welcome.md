@@ -66,6 +66,23 @@ Select mode:"
 
 **Capture workflow_mode setting.**
 
+**Set behavior defaults based on workflow_mode:**
+
+{If Fast}
+- structured_context: false
+- evidence_refinement_level: light
+- reader_testing_requirement: optional
+
+{If Standard}
+- structured_context: true
+- evidence_refinement_level: full
+- reader_testing_requirement: required
+
+{If Deep}
+- structured_context: true
+- evidence_refinement_level: deep
+- reader_testing_requirement: required
+
 ### 4. Ready Check
 
 "**Ready to create an amazing solution document?**
@@ -89,6 +106,7 @@ Any questions before we begin?"
 
 ✅ User understands workflow phases
 ✅ Mode selected (Standard/Fast/Deep)
+✅ Behavior defaults set for structured context, refinement depth, and reader testing
 ✅ User ready to proceed
 ✅ Expectations set for time and output
 

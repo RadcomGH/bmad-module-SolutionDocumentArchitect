@@ -209,7 +209,39 @@ We have feedback from both adversarial perspectives. Let's synthesize:
 - Moderate revision round
 - Substantial redrafting of problem sections"
 
-### 5. User Review of Findings
+### 5. Fresh-Reader Testing (Review Board)
+
+"**Fresh-reader testing** validates whether a reader with no prior context can understand the document.
+
+**Requirement:** {reader_testing_requirement}
+
+{If requirement is optional}
+- Ask the user whether to run fresh-reader testing or defer it
+
+**Step 1: Predict Reader Questions**
+- Generate 5-10 likely discovery questions readers will ask
+- Focus on: scope, feasibility, key benefits, risks, and next steps
+
+**Step 2: Comprehension Check**
+{If isolated-context tooling is available}
+- Run an isolated-context read of the document and answer the questions
+- Capture what was misunderstood or missed
+
+{If isolated-context tooling is not available}
+- Provide the question set and ask the user to test in a fresh session
+- Capture what was misunderstood or ambiguous
+
+**Step 3: Failure Taxonomy**
+- Ambiguity
+- Unstated assumptions
+- Contradictions
+- Missing business impact
+- Missing technical feasibility anchors
+
+**Step 4: Required Fixes**
+- Map failures to sections with actionable edits"
+
+### 6. User Review of Findings
 
 "**Please review the Review Board findings.**
 
@@ -226,7 +258,7 @@ We have feedback from both adversarial perspectives. Let's synthesize:
 
 **Your choice:**"
 
-### 6. Handle Response
+### 7. Handle Response
 
 #### If AUTO-FIX:
 "**Applying all Review Board recommendations...**
@@ -296,7 +328,7 @@ The adversarial review caught {count} issues that could:
 
 {If confirmed ignore, mark review as 'skipped' in state}"
 
-### 7. Review Complete
+### 8. Review Complete
 
 "**Review Board phase complete!** ✅
 
@@ -327,7 +359,7 @@ product_manager_findings: {count}
 fixes_applied: {count}
 ```
 
-### 8. Save Review Board Findings
+### 9. Save Review Board Findings
 
 **Chief Editor:**
 
@@ -397,6 +429,21 @@ Output: `{output_folder}/solution-descriptions/{subject_name}_review-findings.md
 - **Issue:** {description}
 - **Reason Skipped:** {user's justification}
 
+## Fresh-Reader Testing Results
+
+**Reader Question Set:**
+{List 5-10 reader questions}
+
+**Comprehension Issues Found:**
+- {Ambiguity}
+- {Unstated assumptions}
+- {Contradictions}
+- {Missing business impact}
+- {Missing technical feasibility anchors}
+
+**Section-Level Fixes:**
+{Map issues to sections with recommended edits}
+
 ## Document Hardening Summary
 
 **The document is now more:**
@@ -412,7 +459,7 @@ Output: `{output_folder}/solution-descriptions/{subject_name}_review-findings.md
 *Workflow: SDA Main — Step 08: Adversarial Review*
 ```
 
-### 9. Present Menu
+### 10. Present Menu
 
 **Phase 3: Review Board Complete ✅**
 

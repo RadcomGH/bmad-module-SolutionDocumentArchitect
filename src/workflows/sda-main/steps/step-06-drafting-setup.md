@@ -53,6 +53,8 @@ This is where SDA's dual-perspective approach shines. Here's what happens:
 - **Support Drafter:** {support_drafter}
 - **Secondary Importance:** {secondary_importance}
 - **Outline Sections:** {count sections from approved outline}
+ - **Evidence Refinement:** {evidence_refinement_level}
+ - **Reader Testing:** {reader_testing_requirement} (Review Board phase)
 
 **Drafting Strategy:**
 

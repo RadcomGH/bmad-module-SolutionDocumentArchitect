@@ -200,7 +200,34 @@ Value Analyst and Product Manager have completed their review. Here's where they
 {publish with minor edits / needs revision / requires major rework}
 "
 
-### 5. User Reaction
+### 5. Fresh-Reader Testing (Review Board)
+
+"**Fresh-reader testing** validates whether a reader with no prior context can understand the document.
+
+**Step 1: Predict Reader Questions**
+- Generate 5-10 likely discovery questions readers will ask
+- Focus on: scope, feasibility, key benefits, risks, and next steps
+
+**Step 2: Comprehension Check**
+{If isolated-context tooling is available}
+- Run an isolated-context read of the document and answer the questions
+- Capture what was misunderstood or missed
+
+{If isolated-context tooling is not available}
+- Provide the question set and ask the user to test in a fresh session
+- Capture what was misunderstood or ambiguous
+
+**Step 3: Failure Taxonomy**
+- Ambiguity
+- Unstated assumptions
+- Contradictions
+- Missing business impact
+- Missing technical feasibility anchors
+
+**Step 4: Required Fixes**
+- Map failures to sections with actionable edits"
+
+### 6. User Reaction
 
 "**How does this feedback land?**
 
@@ -212,11 +239,11 @@ Share your reaction or type 'continue':"
 
 **Allow user to discuss specific findings or ask questions about review.**
 
-### 6. Transition
+### 7. Transition
 
 "**Let me compile the complete review report with actionable recommendations.**"
 
-### 7. Present Menu
+### 8. Present Menu
 
 **Select an Option:**
 - **[C]** Continue to Review Report
