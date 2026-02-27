@@ -35,11 +35,11 @@ Five phases guide you from subject definition to polished document:
 ## Agent Team
 
 **Full SDA Team (8 agents):**
-- **Innovation Support:** Catalyst, Visionary, Inventor
-- **Production & Drafting:** Chronicler, Envoy, Weaver
-- **Review Board:** Client-Advocate, Product-Guard
+- **Innovation Support:** Solution Consultant, Solution Designer, Technical Wizard
+- **Production & Drafting:** Technical Scribe, Value Narrator, Chief Editor
+- **Review Board:** Value Analyst, Product Manager
 
-**Weaver** serves as master agent, orchestrating the entire workflow.
+**Chief Editor** serves as master agent, orchestrating the entire workflow.
 
 ---
 
@@ -55,9 +55,9 @@ When user activates this workflow, load `{installed_path}/steps/step-00-welcome.
 
 **Deliverables:**
 - Polished dual-audience solution document
-- Technical narrative (Chronicler)
-- Business value narrative (Envoy)
-- Unified synthesis (Weaver)
+- Technical narrative (Technical Scribe)
+- Business value narrative (Value Narrator)
+- Unified synthesis (Chief Editor)
 - Adversarial review findings integrated
 
 **Output Location:** `{output_folder}/solution-descriptions/{subject}_description.md`

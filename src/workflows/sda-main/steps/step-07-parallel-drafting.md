@@ -1,6 +1,6 @@
 ---
 name: 'step-07-parallel-drafting'
-description: 'Parallel drafting by Chronicler and Envoy with real-time cross-review (Phase 3)'
+description: 'Parallel drafting by Technical Scribe and Value Narrator with real-time cross-review (Phase 3)'
 nextStepFile: './step-08-adversarial-review.md'
 ---
 
@@ -8,7 +8,7 @@ nextStepFile: './step-08-adversarial-review.md'
 
 ## STEP GOAL
 
-Execute the dual-perspective drafting process where Chronicler and Envoy work simultaneously, with Catalyst coordinating and resolving creative tensions that arise.
+Execute the dual-perspective drafting process where Technical Scribe and Value Narrator work simultaneously, with Solution Consultant coordinating and resolving creative tensions that arise.
 
 ---
 
@@ -35,8 +35,8 @@ Streaming the drafting process in real-time...
 
 **SECTION: Executive Summary / Overview**
 
-{If Customer Primary - Envoy leads}
-"**Envoy drafting:** Executive Summary
+{If Customer Primary - Value Narrator leads}
+"**Value Narrator drafting:** Executive Summary
 
 'Let me craft an opening that hooks the reader and makes them care about this solution...
 
@@ -46,10 +46,10 @@ Streaming the drafting process in real-time...
 - The Solution: {subject_name} overview
 - The Impact: {primary_beneficiaries and outcomes}
 
-Done. Chronicler, your technical review?'"
+Done. Technical Scribe, your technical review?'"
 
-{If R&D Primary - Chronicler leads}
-"**Chronicler drafting:** Technical Overview
+{If R&D Primary - Technical Scribe leads}
+"**Technical Scribe drafting:** Technical Overview
 
 'Creating a precise technical summary that architects can scan quickly...
 
@@ -59,7 +59,7 @@ Done. Chronicler, your technical review?'"
 - Key Components: {list from findings}
 - Technical Capabilities: {performance, scale, integration}
 
-Done. Envoy, does this communicate value?'"
+Done. Value Narrator, does this communicate value?'"
 
 **Cross-Review:**
 
@@ -70,7 +70,7 @@ Done. Envoy, does this communicate value?'"
 - Clarity check: {any communication improvements}
 - Balance: {suggest additions for secondary audience}'
 
-**Catalyst coordinating:**
+**Solution Consultant coordinating:**
 
 {If significant disagreement}
 'I'm seeing tension between {issue}. Let me help resolve this...'
@@ -130,26 +130,26 @@ Done. {support_agent}, your review?"
 
 '{Provide perspective-specific feedback}
 
-{If Chronicler reviewing Envoy:}
+{If Technical Scribe reviewing Value Narrator:}
 - Technical accuracy: {verify claims}
 - Missing context: {suggest technical details needed}
 - Oversimplification: {flag where nuance matters}
 
-{If Envoy reviewing Chronicler:}
+{If Value Narrator reviewing Technical Scribe:}
 - Clarity: {identify jargon or unclear explanations}
 - Value connection: {suggest impact statements}
 - Audience mismatch: {flag overly technical language}
 
 {Flag any contradictions with earlier sections}'"
 
-**Catalyst Coordination:**
+**Solution Consultant Coordination:**
 
 {If significant tension:}
-"**Catalyst:** 'We have a disagreement here.
+"**Solution Consultant:** 'We have a disagreement here.
 
-**Chronicler says:** '{technical constraint or accuracy concern}'
+**Technical Scribe says:** '{technical constraint or accuracy concern}'
 
-**Envoy says:** '{customer need or clarity concern}'
+**Value Narrator says:** '{customer need or clarity concern}'
 
 **The issue:** {describe the conflict}
 
@@ -163,7 +163,7 @@ Done. {support_agent}, your review?"
 {Handle resolution}
 
 {If minor issues:}
-"**Catalyst:** '{lead_agent}, please update based on {support_agent}'s point about {specific issue}.'
+"**Solution Consultant:** '{lead_agent}, please update based on {support_agent}'s point about {specific issue}.'
 
 **Section complete:** ✅ {section_name}"
 
@@ -183,7 +183,7 @@ Done. {support_agent}, your review?"
 <details>
 <summary>📜 <b>Technical Detail:</b> {section_name}</summary>
 
-{Chronicler's technical content}
+{Technical Scribe's technical content}
 
 </details>
 ```
@@ -193,7 +193,7 @@ Done. {support_agent}, your review?"
 ```markdown
 > 🕊️ **VALUE HIGHLIGHT:** {section_name}
 >
-> {Envoy's business value content}
+> {Value Narrator's business value content}
 ```
 
 {Follow same pattern: draft → cross-review → coordinate → complete}
@@ -301,8 +301,8 @@ ready_for_review: true
 - Pause for Interactive mode at configured checkpoints
 
 **Creative Tension Examples:**
-- "We can't promise sub-millisecond latency" (Chronicler) vs "Customers need concrete performance numbers" (Envoy)
-- "This explanation is too technical for business readers" (Envoy) vs "We can't oversimplify the architecture" (Chronicler)
+- "We can't promise sub-millisecond latency" (Technical Scribe) vs "Customers need concrete performance numbers" (Value Narrator)
+- "This explanation is too technical for business readers" (Value Narrator) vs "We can't oversimplify the architecture" (Technical Scribe)
 - Resolution: Compromise formulations, layered content, or user decision
 
 ---

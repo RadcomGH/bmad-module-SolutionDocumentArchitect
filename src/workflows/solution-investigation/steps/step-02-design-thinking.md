@@ -14,11 +14,11 @@ Facilitate empathy mapping for solution audiences and reframe from user-centered
 
 ## EXECUTION
 
-### 1. Transition from Catalyst to Visionary
+### 1. Transition from Solution Consultant to Solution Designer
 
-"**Hi, I'm Visionary.** 🔮
+"**Hi, I'm Solution Designer.** 🔮
 
-Catalyst did excellent work clarifying your solution. Now let's make sure it serves real human needs.
+Solution Consultant did excellent work clarifying your solution. Now let's make sure it serves real human needs.
 
 Your solution will be documented for multiple audiences. Let's understand them deeply."
 
@@ -92,7 +92,22 @@ This decision drives how we'll structure the final documentation."
 
 **Capture primary_audience setting.**
 
-### 6. Transition
+### 6. Save Empathy Maps
+
+"**Saving Empathy Maps...**
+
+Output: `{output_folder}/solution-investigation/{solution-name}_empathy-maps.md`
+
+These maps will guide audience-appropriate documentation."
+
+**Create empathy maps file with:**
+- Technical audience empathy map
+- Business audience empathy map
+- User-centered framing for each audience
+- Primary audience designation and rationale
+- Dual-audience challenge summary
+
+### 7. Transition
 
 "**Excellent. We now understand WHO we're serving.**
 

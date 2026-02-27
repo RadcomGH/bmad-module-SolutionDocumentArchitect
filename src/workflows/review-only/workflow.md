@@ -25,7 +25,7 @@ version: 1.0.0
 This workflow provides adversarial review through three steps:
 
 1. **Document Loading** — Load existing document and set review focus
-2. **Adversarial Review** — Client-Advocate + Product-Guard challenge document
+2. **Adversarial Review** — Value Analyst + Product Manager challenge document
 3. **Review Report** — Compile findings, recommendations, and action items
 
 ---
@@ -33,8 +33,8 @@ This workflow provides adversarial review through three steps:
 ## Agent Team
 
 **Review Board:**
-- **Client-Advocate** — Professional skeptic, customer perspective (Primary)
-- **Product-Guard** — R&D defender, technical validation (Primary)
+- **Value Analyst** — Professional skeptic, customer perspective (Primary)
+- **Product Manager** — R&D defender, technical validation (Primary)
 
 ---
 

@@ -8,7 +8,7 @@ nextStepFile: './step-09-synthesis-formatting.md'
 
 ## STEP GOAL
 
-Subject the drafted document to rigorous adversarial review from opposing perspectives. Client-Advocate challenges from customer viewpoint, Product-Guard challenges from technical/business reality. Catch blind spots, overstatements, and gaps before finalization.
+Subject the drafted document to rigorous adversarial review from opposing perspectives. Value Analyst challenges from customer viewpoint, Product Manager challenges from technical/business reality. Catch blind spots, overstatements, and gaps before finalization.
 
 ---
 
@@ -20,13 +20,13 @@ Subject the drafted document to rigorous adversarial review from opposing perspe
 
 Now that we have a complete draft, it's time to stress-test it. The Review Board operates with professional skepticism:
 
-**👥 Client-Advocate** — Represents customer perspective
+**👥 Value Analyst** — Represents customer perspective
 - Will they understand this?
 - Will they believe these claims?
 - What concerns will they raise?
 - Are we addressing their real problems?
 
-**🛡️ Product-Guard** — Represents technical/business reality
+**🛡️ Product Manager** — Represents technical/business reality
 - Is this technically accurate?
 - Can we actually deliver this?
 - Are claims aligned with our roadmap?
@@ -37,9 +37,9 @@ Both agents review the full document independently, then present their findings.
 
 **Ready for the gauntlet?**"
 
-### 2. Client-Advocate Review
+### 2. Value Analyst Review
 
-"**Switching to Client-Advocate** 👥 — Your customer perspective guardian.
+"**Switching to Value Analyst** 👥 — Your customer perspective guardian.
 
 'Hello. I'm reading this document as if I'm your skeptical customer — someone who's been burned by overpromises before.
 
@@ -51,7 +51,7 @@ Let me review the complete draft...'
 
 ---
 
-## Client-Advocate Findings
+## Value Analyst Findings
 
 **Overall Assessment:** {Excellent | Strong | Concerning | Problematic}
 
@@ -104,11 +104,11 @@ Let me review the complete draft...'
 
 'That's my customer reality check. Some of this might sting, but better to hear it from me than from a lost deal.'
 
-**Client-Advocate review complete.**"
+**Value Analyst review complete.**"
 
-### 3. Product-Guard Review
+### 3. Product Manager Review
 
-"**Switching to Product-Guard** 🛡️ — Your reality guardian.
+"**Switching to Product Manager** 🛡️ — Your reality guardian.
 
 'I'm reading this document as your internal skeptic — the person who asks "Can we actually do this?" and "What aren't we saying?"
 
@@ -120,7 +120,7 @@ Let me review...'
 
 ---
 
-## Product-Guard Findings
+## Product Manager Findings
 
 **Overall Assessment:** {Solid | Mostly Sound | Risky | Dangerous}
 
@@ -176,7 +176,7 @@ Let me review...'
 
 'This document needs these corrections before it goes external. We can't afford to overpromise or misrepresent capabilities.'
 
-**Product-Guard review complete.**"
+**Product Manager review complete.**"
 
 ### 4. Review Board Synthesis
 
@@ -188,12 +188,12 @@ We have feedback from both adversarial perspectives. Let's synthesize:
 {Issues flagged by BOTH reviewers}
 - {Intersection of concerns}
 
-**Customer Perspective (Client-Advocate):**
+**Customer Perspective (Value Analyst):**
 - Priority fixes: {count}
 - Clarity improvements: {count}
 - Credibility enhancements: {count}
 
-**Reality Perspective (Product-Guard):**
+**Reality Perspective (Product Manager):**
 - Accuracy corrections: {count}
 - Overpromise rollbacks: {count}
 - Disclaimer additions: {count}
@@ -232,10 +232,10 @@ We have feedback from both adversarial perspectives. Let's synthesize:
 "**Applying all Review Board recommendations...**
 
 {Process each fix:}
-- Client-Advocate priority 1: {fixing...}
-- Product-Guard accuracy issue: {fixing...}
-- Client-Advocate clarity issue: {fixing...}
-- Product-Guard overpromise: {fixing...}
+- Value Analyst priority 1: {fixing...}
+- Product Manager accuracy issue: {fixing...}
+- Value Analyst clarity issue: {fixing...}
+- Product Manager overpromise: {fixing...}
 
 {Update document file with all corrections}
 
@@ -301,8 +301,8 @@ The adversarial review caught {count} issues that could:
 "**Review Board phase complete!** ✅
 
 **Review Statistics:**
-- Client-Advocate findings: {count}
-- Product-Guard findings: {count}
+- Value Analyst findings: {count}
+- Product Manager findings: {count}
 - Critical issues: {count}
 - Fixes applied: {count}
 - Fixes skipped: {count}
@@ -322,12 +322,97 @@ Output: `{output_folder}/solution-descriptions/{subject_name}_description_REVIEW
 **Update workflow state:**
 ```yaml
 review_board_complete: true
-client_advocate_findings: {count}
-product_guard_findings: {count}
+value_analyst_findings: {count}
+product_manager_findings: {count}
 fixes_applied: {count}
 ```
 
-### 8. Present Menu
+### 8. Save Review Board Findings
+
+**Chief Editor:**
+
+"**Saving Review Board findings and applied fixes...**
+
+Output: `{output_folder}/solution-descriptions/{subject_name}_review-findings.md`
+
+**Review Summary:**
+- Value Analyst findings: {count}
+- Product Manager findings: {count}
+- Critical issues: {count}
+- Fixes applied: {count}
+- Fixes skipped: {count}
+
+*These findings document how the document was hardened through adversarial review.*"
+
+**Create file:** `{output_folder}/solution-descriptions/{subject_name}_review-findings.md`
+
+**Content:**
+```markdown
+# Review Board Findings: {subject_name}
+
+## Review Statistics
+- **Value Analyst Findings:** {count}
+- **Product Manager Findings:** {count}
+- **Critical Issues:** {count}
+- **Fixes Applied:** {count}
+- **Fixes Skipped:** {count}
+
+## Value Analyst Review (Customer Perspective)
+
+### Findings
+{List all Value Analyst findings with:}
+- Issue description
+- Impact on credibility/clarity
+- Recommended fix
+- Category (incomplete evidence, unsupported claims, etc.)
+
+### Applied Fixes
+{For each fix applied:}
+- **Issue:** {description}
+- **Fix:** {what was changed}
+- **Rationale:** {why this fix was chosen}
+
+### Skipped Fixes
+{For any skipped:}
+- **Issue:** {description}
+- **Reason Skipped:** {user's justification}
+
+## Product Manager Review (Reality Check)
+
+### Findings
+{List all Product Manager findings with:}
+- Issue description
+- Feasibility concern
+- Risk assessment
+- Recommended fix
+
+### Applied Fixes
+{For each fix applied:}
+- **Issue:** {description}
+- **Fix:** {what was changed}
+- **Rationale:** {why this fix was chosen}
+
+### Skipped Fixes
+{For any skipped:}
+- **Issue:** {description}
+- **Reason Skipped:** {user's justification}
+
+## Document Hardening Summary
+
+**The document is now more:**
+- Clear and customer-friendly (Value Analyst)
+- Technically accurate and realistic (Product Manager)
+- Credible with proper support/evidence
+- Complete with necessary disclaimers
+
+**Output Location:** `{output_folder}/solution-descriptions/{subject_name}_description_REVIEWED.md`
+
+---
+*Generated: {timestamp}*
+*Workflow: SDA Main — Step 08: Adversarial Review*
+```
+
+### 9. Present Menu
 
 **Phase 3: Review Board Complete ✅**
 
@@ -342,8 +427,8 @@ fixes_applied: {count}
 
 ## SUCCESS METRICS
 
-✅ Client-Advocate review completed
-✅ Product-Guard review completed
+✅ Value Analyst review completed
+✅ Product Manager review completed
 ✅ Findings presented to user
 ✅ User chose fix strategy
 ✅ Fixes applied (or consciously skipped)

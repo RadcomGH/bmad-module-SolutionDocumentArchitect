@@ -1,0 +1,36 @@
+# Memory File Structure Schema
+# Defines the standard structure for memory files created by this workflow
+
+memory_file_structure:
+  frontmatter:
+    - memory_id        # Unique identifier for the memory
+    - topic            # Topic name/title
+    - category         # Category (requirements, architecture, integrations, operations)
+    - sources          # Array of source documents with paths and dates
+    - synthesized      # Boolean - true if synthesized from multiple sources
+    - created          # Timestamp when memory was created
+    - last_updated     # Timestamp when memory was last updated
+    - relevance_tags   # Array of tags for search/filtering
+  
+  content_sections:
+    - context          # Synthesized context from source documents
+    - key_facts        # Bullet list of key facts
+    - relationships    # Related topics and dependencies
+
+# Example memory file frontmatter:
+# ---
+# memory_id: "ha-dr-strategy-001"
+# topic: "High Availability and Disaster Recovery Strategy"
+# category: "architecture"
+# sources:
+#   - doc: "HA-and-DR-Strategy.md"
+#     date: "2025-11-05"
+#     sections: ["3.2 Backup Strategy", "4.1 Failover"]
+#   - doc: "DISH-RADCOM-ACE-HL-Design-v1.5.md"
+#     date: "2025-09-04"
+#     sections: ["5.1 Data Protection"]
+# synthesized: true
+# created: "2026-02-19T10:30:00Z"
+# last_updated: "2026-02-19T10:30:00Z"
+# relevance_tags: ["high-availability", "disaster-recovery", "backup"]
+# ---

@@ -18,12 +18,12 @@ Orient user to the SDA workflow and prepare for document creation.
 
 "**Welcome to the Solution Document Architect!** 📝
 
-I'm Weaver, your master agent for this journey. Together with the SDA team, we'll create a solution document that satisfies both technical reviewers AND business stakeholders.
+I'm Chief Editor, your master agent for this journey. Together with the SDA team, we'll create a solution document that satisfies both technical reviewers AND business stakeholders.
 
 **What makes SDA special:**
-- 🧠 **Discovery** — Catalyst clarifies your solution through questioning
-- 📜🕊️ **Dual Narratives** — Chronicler (technical) + Envoy (business) work in parallel
-- 🥊 **Adversarial Review** — Client-Advocate + Product-Guard stress-test the document
+- 🧠 **Discovery** — Solution Consultant clarifies your solution through questioning
+- 📜🕊️ **Dual Narratives** — Technical Scribe (technical) + Value Narrator (business) work in parallel
+- 🥊 **Adversarial Review** — Value Analyst + Product Manager stress-test the document
 - 🧵 **Synthesis** — I unify everything into a polished final document
 
 The result: 'This document is better than anything I could write alone.'"
@@ -45,7 +45,7 @@ The result: 'This document is better than anything I could write alone.'"
 - Approve integrated outline
 
 **Phase 3: Drafting & Review** (20-45 min)
-- Chronicler + Envoy create dual narratives
+- Technical Scribe + Value Narrator create dual narratives
 - Review Board provides adversarial audit
 
 **Phase 4: Synthesis** (10-15 min)
@@ -70,7 +70,7 @@ Select mode:"
 
 "**Ready to create an amazing solution document?**
 
-Next up: Phase 0 - Subject Definition (Catalyst will ask about your solution)
+Next up: Phase 0 - Subject Definition (Solution Consultant will ask about your solution)
 
 Any questions before we begin?"
 

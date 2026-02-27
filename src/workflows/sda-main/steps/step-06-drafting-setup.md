@@ -8,7 +8,7 @@ nextStepFile: './step-07-parallel-drafting.md'
 
 ## STEP GOAL
 
-Prepare for the parallel drafting phase where Chronicler and Envoy work simultaneously on the document, with Catalyst providing real-time coordination and conflict resolution.
+Prepare for the parallel drafting phase where Technical Scribe and Value Narrator work simultaneously on the document, with Solution Consultant providing real-time coordination and conflict resolution.
 
 ---
 
@@ -23,7 +23,7 @@ This is where SDA's dual-perspective approach shines. Here's what happens:
 **The Drafting Team:**
 - 🕊️ **{lead_drafter}** writes the primary narrative
 - 📜 **{support_drafter}** adds complementary sections
-- 💡 **Catalyst** coordinates and resolves tensions
+- 💡 **Solution Consultant** coordinates and resolves tensions
 
 **The Process:**
 1. **Parallel Drafting** — Both agents work simultaneously on their sections
@@ -57,13 +57,13 @@ This is where SDA's dual-perspective approach shines. Here's what happens:
 **Drafting Strategy:**
 
 {If Customer Primary}
-→ Envoy leads: Write compelling narrative sections
-→ Chronicler supports: Add technical detail blocks
+→ Value Narrator leads: Write compelling narrative sections
+→ Technical Scribe supports: Add technical detail blocks
 → Style: Expandable <details> tags for technical depth
 
 {If R&D Primary}
-→ Chronicler leads: Write technical specification sections  
-→ Envoy supports: Add value highlight callouts
+→ Technical Scribe leads: Write technical specification sections  
+→ Value Narrator supports: Add value highlight callouts
 → Style: Callout boxes for business value
 
 **Document Formatting:**
@@ -73,9 +73,9 @@ This is where SDA's dual-perspective approach shines. Here's what happens:
 - Code blocks and diagrams where appropriate
 
 **Quality Gates:**
-- Factual accuracy (Chronicler validates)
-- Clarity and impact (Envoy validates)
-- Logical consistency (Catalyst validates)
+- Factual accuracy (Technical Scribe validates)
+- Clarity and impact (Value Narrator validates)
+- Logical consistency (Solution Consultant validates)
 
 **These parameters look good?**
 
@@ -95,7 +95,7 @@ This is where SDA's dual-perspective approach shines. Here's what happens:
 **{support_drafter} will draft:**
 {List supporting sections}
 
-**Catalyst will coordinate:**
+**Solution Consultant will coordinate:**
 - Section transitions and flow
 - Cross-references between sections
 - Conflict resolution between agents
@@ -187,7 +187,7 @@ sections_completed: []
 - Section-by-section progress stream
 
 **If tensions arise:**
-When Chronicler and Envoy disagree (e.g., "We can't promise that performance" vs "Customers need concrete numbers"), Catalyst will:
+When Technical Scribe and Value Narrator disagree (e.g., "We can't promise that performance" vs "Customers need concrete numbers"), Solution Consultant will:
 1. Present both perspectives
 2. Ask you to weigh in OR
 3. Find a compromise formulation

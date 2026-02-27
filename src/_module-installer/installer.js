@@ -59,7 +59,9 @@ This directory contains reference materials used by the Solution Document Archit
 
 Agents reference these documents to gather context when creating solution documents. Place relevant reference materials in the appropriate subdirectory.
 
-**Index File:** The \`index.yaml\` file provides a queryable catalog of all reference documents, automatically maintained by the Weaver agent.
+**Index File:** The \`index.yaml\` file provides a queryable catalog of all reference documents, automatically maintained by the Chief Editor agent.
+
+**Built-in Knowledge Base:** SDA agents have access to a built-in knowledge base containing patterns, table structures, and conventions extracted from enterprise solution documents. These patterns are automatically consulted by agents during document creation. Your reference documents provide project-specific context, while the knowledge base provides reusable structural patterns.
 
 ## Guidelines
 

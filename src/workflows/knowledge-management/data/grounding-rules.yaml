@@ -1,0 +1,140 @@
+# Knowledge Management Grounding Rules
+# Defines synthesis rules, conflict resolution strategies, and agent extraction configuration
+
+synthesis_rules:
+  smart_filtering: true           # Extract relevant facts, skip excessive detail
+  recency_bias: true              # Newer docs override older on conflicts
+  consolidate_topics: true        # Combine related info from multiple docs
+  min_content_length: 100         # Minimum characters for a memory (skip trivial content)
+  max_memory_size: 5000           # Maximum characters per memory (split if larger)
+
+conflict_resolution:
+  auto_resolve_minor: true                    # Auto-resolve non-critical conflicts
+  require_human_confirmation: true            # Pause for significant conflicts
+  provide_clarification_option: true          # Allow context review before decision
+  
+  # Triggers that indicate significant conflicts requiring human confirmation
+  conflict_severity_triggers:
+    - "requirements"
+    - "architecture"
+    - "critical"
+    - "performance"
+    - "security"
+    - "compliance"
+    - "must"
+    - "shall"
+  
+  # Available options when conflict is detected
+  conflict_options:
+    - code: "A"
+      label: "Accept newer document"
+      description: "Use the information from the more recent document"
+    - code: "B"
+      label: "Accept older document"
+      description: "Use the information from the older document"
+    - code: "M"
+      label: "Merge both with note"
+      description: "Include both versions with a note about the difference"
+    - code: "C"
+      label: "Clarify - show full context"
+      description: "Display surrounding context from both documents"
+    - code: "S"
+      label: "Skip - needs manual review"
+      description: "Skip this conflict and flag for manual resolution"
+    - code: "N"
+      label: "Add custom note"
+      description: "Add a custom note explaining the resolution"
+
+agent_extraction:
+  enabled: true
+  output_location: "agents/{agent-name}/knowledge/"  # Per-agent directories in _memory/
+  
+  # Agent roles and their focus areas
+  agent_roles:
+    - name: "chief-editor"
+      focus: "Synthesis, formatting, and technical editing"
+      description: "Unifies multi-agent contributions into cohesive documents"
+    - name: "value-analyst"
+      focus: "Business value and ROI analysis"
+      description: "Analyzes business value, benefits, and financial impact"
+    - name: "value-narrator"
+      focus: "Storytelling and narrative communication"
+      description: "Creates compelling narratives for stakeholder communication"
+    - name: "solution-consultant"
+      focus: "Architecture and technical implementation"
+      description: "Provides technical guidance and architectural recommendations"
+    - name: "technical-wizard"
+      focus: "Deep technical implementation and systems"
+      description: "Handles complex technical details and system configurations"
+    - name: "product-manager"
+      focus: "Requirements, roadmap, and feature prioritization"
+      description: "Manages requirements, scope, and feature priorities"
+    - name: "technical-scribe"
+      focus: "Documentation and content structure"
+      description: "Creates clear, well-structured technical documentation"
+    - name: "solution-designer"
+      focus: "Solution architecture and design patterns"
+      description: "Designs overall solution architecture and patterns"
+  
+  # Keyword filters for extracting relevant content per agent role
+  # Updated 2026-02-19 based on v3.0.0 memory synthesis
+  relevance_filters:
+    chief-editor:
+      keywords: ["quality", "standards", "review", "approval", "format", "synthesis", "editing", "consistency", 
+                "documentation", "clarity", "structure", "readability", "style", "coherence"]
+      categories: ["all"]
+    
+    value-analyst:
+      keywords: ["value", "benefit", "ROI", "business case", "cost", "savings", "return", "investment",
+                "TCO", "total cost of ownership", "break-even", "cost analysis", "pricing", "budget",
+                "efficiency", "productivity", "cost optimization", "financial", "economic"]
+      categories: ["requirements", "operations"]
+    
+    value-narrator:
+      keywords: ["story", "narrative", "communication", "presentation", "stakeholder", "message", "audience",
+                "benefits", "outcomes", "success", "impact", "transformation", "customer", "use case",
+                "scenario", "journey", "experience", "compelling"]
+      categories: ["requirements", "operations"]
+    
+    solution-consultant:
+      keywords: ["architecture", "design", "technical", "implementation", "integration", "solution", "approach",
+                "cloud", "deployment", "AWS", "GCP", "EKS", "GKE", "multi-region", "availability zone",
+                "high availability", "HA", "DR", "disaster recovery", "geo-redundancy", "failover",
+                "topology", "CDF", "backend", "distributed", "customer"]
+      categories: ["architecture", "integrations"]
+    
+    technical-wizard:
+      keywords: ["technical", "implementation", "code", "system", "platform", "configuration", "deployment", "infrastructure",
+                "protocol", "packet", "traffic", "mirroring", "cTAP", "VPC", "VXLAN", "GRE",
+                "probe", "cProbe", "cLB", "cLBA", "Kubernetes", "pod", "container",
+                "network", "SRIOV", "DPDK", "performance", "throughput", "latency", "bandwidth",
+                "VoLTE", "VoNR", "RTP", "SIP", "Diameter", "GTP", "NGAP", "5G", "IMS",
+                "MOS", "R-Factor", "jitter", "packet loss", "voice quality",
+                "ML", "machine learning", "anomaly detection", "AIM", "Prophet", "ARIMA", "forecasting",
+                "NiFi", "ETL", "Vertica", "MongoDB", "Kafka", "data pipeline",
+                "COTS", "hardware", "HP DL385", "NPB", "PAM", "SAM", "NAM",
+                "troubleshooting", "debugging", "monitoring", "metrics", "alerting"]
+      categories: ["architecture", "integrations", "operations"]
+    
+    product-manager:
+      keywords: ["requirements", "roadmap", "features", "priority", "scope", "timeline", "deliverables", "milestones",
+                "objectives", "goals", "phases", "Phase 1a", "Phase 1b", "Phase 2",
+                "Project AInsight", "deployment", "rollout", "schedule", "dependencies",
+                "stakeholder", "customer requirements", "acceptance criteria", "KPI"]
+      categories: ["requirements", "operations"]
+    
+    technical-scribe:
+      keywords: ["documentation", "content", "writing", "structure", "clarity", "examples", "guides", "instructions",
+                "procedure", "MOP", "runbook", "playbook", "how-to", "step-by-step",
+                "configuration", "setup", "installation", "troubleshooting guide",
+                "best practices", "standards", "templates", "reference", "API documentation"]
+      categories: ["all"]
+    
+    solution-designer:
+      keywords: ["solution", "architecture", "design", "patterns", "framework", "structure", "components", "interfaces",
+                "topology", "deployment model", "distributed", "centralized", "hybrid",
+                "cloud deployment", "multi-AZ", "multi-region", "active-active", "active-passive",
+                "site architecture", "CDF", "backend", "frontend", "data flow", "network design",
+                "scalability", "sizing", "capacity planning", "resource allocation",
+                "integration architecture", "API", "protocol", "data exchange"]
+      categories: ["architecture", "integrations"]

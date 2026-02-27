@@ -1,0 +1,31 @@
+# Category Mappings
+# Maps reference document folder names to memory categories
+
+mappings:
+  "01-context-and-requirements": "requirements"
+  "02-architecture-and-design": "architecture"
+  "03-security-and-integrations": "integrations"
+  "04-operations-and-risks": "operations"
+  "99-archive": "archive"          # Optional: handle archived documents
+  "99-for-review": "review"        # Optional: handle documents under review
+
+# Category descriptions for context
+category_descriptions:
+  requirements:
+    description: "Project requirements, context, scope, and business needs"
+    priority: "high"
+  architecture:
+    description: "System architecture, design patterns, and technical structure"
+    priority: "high"
+  integrations:
+    description: "Security considerations and integration approaches"
+    priority: "medium"
+  operations:
+    description: "Operational procedures, risks, and maintenance"
+    priority: "medium"
+  archive:
+    description: "Archived or superseded content"
+    priority: "low"
+  review:
+    description: "Content pending review or approval"
+    priority: "low"

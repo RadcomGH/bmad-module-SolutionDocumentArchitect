@@ -4,6 +4,7 @@ bundle:
   icon: 🥊
   description: Adversarial quality assurance from customer and R&D perspectives - stress-testing documents before finalization
 agents:
-  - client-advocate
-  - product-guard
+  - value-analyst
+  - product-manager
+  - solution-designer
 party: "./default-party.csv"

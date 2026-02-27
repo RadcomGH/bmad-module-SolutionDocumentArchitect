@@ -4,7 +4,7 @@ bundle:
   icon: 🧠
   description: Discovery and solution refinement - Socratic questioning, design thinking, and creative problem-solving
 agents:
-  - catalyst
-  - visionary
-  - inventor
+  - solution-consultant
+  - solution-designer
+  - technical-wizard
 party: "./default-party.csv"

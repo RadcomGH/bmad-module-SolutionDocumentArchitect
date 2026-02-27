@@ -34,9 +34,9 @@ This workflow guides you through four phases of solution exploration:
 ## Agent Team
 
 **Innovation Support Team:**
-- **Catalyst** 💡 — Leads Socratic questioning (Primary)
-- **Visionary** 🔮 — Facilitates design thinking and empathy mapping
-- **Inventor** 🧠 — Applies creative problem-solving methodologies
+- **Solution Consultant** 💡 — Leads Socratic questioning (Primary)
+- **Solution Designer** 🔮 — Facilitates design thinking and empathy mapping
+- **Technical Wizard** 🧠 — Applies creative problem-solving methodologies
 
 ---
 

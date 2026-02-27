@@ -24,27 +24,27 @@ This document tracks potential future enhancements and features for the Solution
 
 Add enhanced domain knowledge and capabilities to:
 
-- [ ] **Envoy Agent**
+- [ ] **Value Narrator Agent**
   - Enhance communication and presentation capabilities
   - Add document delivery optimization
 
-- [ ] **Chronicler Agent**
+- [ ] **Technical Scribe Agent**
   - Improve documentation tracking and versioning
   - Add historical context management
 
-- [ ] **Client Advocate Agent**
+- [ ] **Value Analyst Agent**
   - Strengthen stakeholder perspective analysis
   - Add client requirement mapping
 
-- [ ] **Product Guard Agent**
+- [ ] **Product Manager Agent**
   - Enhance quality assurance capabilities
   - Add compliance checking features
 
-- [ ] **Visionary Agent** (Maybe)
+- [ ] **Solution Designer Agent** (Maybe)
   - Consider adding strategic vision capabilities
   - Explore future-state documentation
 
-- [ ] **Inventor Agent** (Maybe)
+- [ ] **Technical Wizard Agent** (Maybe)
   - Consider adding innovation tracking
   - Explore solution design documentation
 

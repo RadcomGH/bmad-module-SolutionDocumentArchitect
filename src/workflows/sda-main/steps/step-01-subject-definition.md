@@ -8,17 +8,17 @@ nextStepFile: './step-02-knowledge-review.md'
 
 ## STEP GOAL
 
-Clearly define what solution, feature, or system will be documented. Use Catalyst to extract intent, competitive advantages, and core context through strategic questioning.
+Clearly define what solution, feature, or system will be documented. Use Solution Consultant to extract intent, competitive advantages, and core context through strategic questioning.
 
 ---
 
 ## EXECUTION
 
-### 1. Switch to Catalyst
+### 1. Switch to Solution Consultant
 
-"**Switching to Catalyst** 💡 — Your Socratic guide for solution clarification.
+"**Switching to Solution Consultant** 💡 — Your Socratic guide for solution clarification.
 
-'Hello! I'm Catalyst. Before we document anything, let's make sure we deeply understand what you're building and why it matters.
+'Hello! I'm Solution Consultant. Before we document anything, let's make sure we deeply understand what you're building and why it matters.
 
 I'll ask targeted questions to help you articulate the intent, value proposition, and competitive moat. My goal: ensure we're documenting the RIGHT solution, not just ANY solution.'"
 
@@ -40,7 +40,7 @@ subject_description: ''
 subject_state: ''
 ```
 
-### 3. Catalyst Strategic Questioning
+### 3. Solution Consultant Strategic Questioning
 
 "**Now let's dig deeper.** I'll ask 3-5 targeted questions to extract the intent and competitive advantages:
 
@@ -75,8 +75,8 @@ competitive_advantages: []
 "**Do you need deeper solution exploration before documenting?**
 
 If your solution is still being designed or you want to explore alternatives, I recommend running the **Solution Investigation workflow** first. This brings in:
-- **Visionary** for design thinking and empathy mapping
-- **Inventor** for TRIZ and creative problem-solving
+- **Solution Designer** for design thinking and empathy mapping
+- **Technical Wizard** for TRIZ and creative problem-solving
 - Deep exploration of problem space before documentation
 
 Options:
@@ -109,7 +109,24 @@ Options:
 
 **Validate and save to workflow state.**
 
-### 6. Present Menu
+### 6. Save Subject Definition
+
+"**Saving Subject Definition...**
+
+Output: `{output_folder}/solution-descriptions/{subject_name}_subject-definition.md`
+
+This captures your solution framing and will guide all subsequent work."
+
+**Create subject definition file with:**
+- Subject name, description, state
+- Problem statement
+- Key insight
+- Critical constraints
+- Primary beneficiaries
+- Competitive advantages
+- Solution Consultant's questioning notes
+
+### 7. Present Menu
 
 **Select an Option:**
 - **[C]** Continue to Phase 1 (Knowledge Review)

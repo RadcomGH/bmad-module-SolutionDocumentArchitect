@@ -112,7 +112,7 @@ This section will contain:
 
 **Why here:** It provides technical depth for the capability described in Section 3 without interrupting the main narrative flow.
 
-**Who drafts:** Chronicler leads this section, ensuring technical accuracy.
+**Who drafts:** Technical Scribe leads this section, ensuring technical accuracy.
 
 **Connection:** This expands on concepts introduced in the parent section '3. Core Capabilities'.
 
@@ -172,7 +172,7 @@ This is where the magic happens:
 - {lead_drafter} drafts the main sections
 - {support_drafter} adds complementary content
 - Agents engage in real-time review and debate
-- Client-Advocate and Product-Guard provide adversarial audit
+- Value Analyst and Product Manager provide adversarial audit
 
 Estimated time: {20-45 minutes} depending on document length.
 

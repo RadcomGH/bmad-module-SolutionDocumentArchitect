@@ -6,14 +6,14 @@ description: "Solution Document Architect produces dual-audience technical docum
 default_selected: false # This module will not be selected by default for new installations
 
 agents:
-  - catalyst
-  - visionary
-  - inventor
-  - chronicler
-  - envoy
-  - weaver
-  - client-advocate
-  - product-guard
+  - solution-consultant
+  - solution-designer
+  - technical-wizard
+  - technical-scribe
+  - value-narrator
+  - chief-editor
+  - value-analyst
+  - product-manager
 
 workflows:
   - sda-main

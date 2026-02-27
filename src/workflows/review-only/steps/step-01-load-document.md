@@ -20,7 +20,7 @@ Load the document to be reviewed and configure review parameters.
 
 I'm here to provide rigorous adversarial review of your solution document. Think of this as a stress test before your document faces real scrutiny from customers and R&D teams.
 
-The Review Board (Client-Advocate + Product-Guard) will challenge your document from opposing perspectives to catch blind spots.
+The Review Board (Value Analyst + Product Manager) will challenge your document from opposing perspectives to catch blind spots.
 
 Ready?"
 
@@ -72,8 +72,8 @@ Quick analysis:
 
 Options:
 1. **Full Review** → Both customer clarity AND technical accuracy (recommended)
-2. **Customer Focus** → Client-Advocate only (clarity, understanding, value)
-3. **Technical Focus** → Product-Guard only (accuracy, feasibility, roadmap)
+2. **Customer Focus** → Value Analyst only (clarity, understanding, value)
+3. **Technical Focus** → Product Manager only (accuracy, feasibility, roadmap)
 4. **Targeted** → Specific sections or concerns
 
 Select review focus:"
@@ -115,8 +115,8 @@ Share context or type 'none':"
 - **Context:** {context or 'general review'}
 
 **Review Board Activated:**
-- ✅ Client-Advocate (Professional Skeptic) {if customer focus included}
-- ✅ Product-Guard (R&D Defender) {if technical focus included}
+- ✅ Value Analyst (Professional Skeptic) {if customer focus included}
+- ✅ Product Manager (R&D Defender) {if technical focus included}
 
 Ready to begin adversarial review?"
 

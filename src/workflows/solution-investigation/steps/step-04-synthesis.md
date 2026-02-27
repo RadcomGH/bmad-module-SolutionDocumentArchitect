@@ -13,9 +13,9 @@ Synthesize all insights from investigation and produce refined solution understa
 
 ## EXECUTION
 
-### 1. Transition to Weaver
+### 1. Transition to Chief Editor
 
-"**Hi, I'm Weaver.** 🧵
+"**Hi, I'm Chief Editor.** 🧵
 
 The Innovation Support team did excellent work exploring your solution. Let me synthesize everything into a clear, actionable document."
 
@@ -23,20 +23,20 @@ The Innovation Support team did excellent work exploring your solution. Let me s
 
 Gather from previous steps:
 
-**From Problem Framing (Catalyst):**
+**From Problem Framing (Solution Consultant):**
 - Core problem and solution
 - Success criteria
 - Key assumptions
 - Open questions
 - Constraints
 
-**From Design Thinking (Visionary):**
+**From Design Thinking (Solution Designer):**
 - Audience empathy maps
 - User needs (technical + business)
 - Primary audience priority
 - Dual-audience challenges
 
-**From Creative Problem-Solving (Inventor):**
+**From Creative Problem-Solving (Technical Wizard):**
 - Challenges tackled
 - Alternatives considered
 - Decision rationale
@@ -133,9 +133,9 @@ Generate document with structure:
 
 ## Investigation Team Notes
 
-**Catalyst:** {key insights from problem framing}
-**Visionary:** {key insights from design thinking}
-**Inventor:** {key insights from problem-solving}
+**Solution Consultant:** {key insights from problem framing}
+**Solution Designer:** {key insights from design thinking}
+**Technical Wizard:** {key insights from problem-solving}
 
 ---
 

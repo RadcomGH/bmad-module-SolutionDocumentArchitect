@@ -14,11 +14,11 @@ Apply creative problem-solving methodologies to tackle complex challenges in the
 
 ## EXECUTION
 
-### 1. Transition to Inventor
+### 1. Transition to Technical Wizard
 
-"**Hello, I'm Inventor.** 🧠
+"**Hello, I'm Technical Wizard.** 🧠
 
-Catalyst clarified your solution, and Visionary mapped your audiences. Now let's make sure your solution is technically sound and innovative.
+Solution Consultant clarified your solution, and Solution Designer mapped your audiences. Now let's make sure your solution is technically sound and innovative.
 
 Are there any tough problems or contradictions we should tackle?"
 
@@ -110,13 +110,89 @@ Summarize findings:
 
 Your solution is now much stronger. Ready for documentation."
 
-### 7. Transition
+### 7. Save Problem-Solving Analysis
+
+**Technical Wizard:**
+
+"**Saving problem-solving analysis...**
+
+Output: `{output_folder}/solution-investigation/{solution-name}_problem-solving.md`
+
+**Analysis Summary:**
+- Challenges tackled: {count}
+- Methodologies applied: {list}
+- Alternatives explored: {count}
+- Decision rationale documented
+
+*This analysis captures the technical reasoning behind your solution choices.*"
+
+**Create file:** `{output_folder}/solution-investigation/{solution-name}_problem-solving.md`
+
+**Content:**
+```markdown
+# Problem-Solving Analysis: {solution-name}
+
+## Challenges Identified
+
+{For each challenge:}
+### Challenge: {name}
+- **Type:** {Contradiction | Constraint | System Complexity | Uncertainty}
+- **Description:** {what makes this challenging}
+- **Impact:** {why this matters}
+
+## Methodologies Applied
+
+{For each methodology used:}
+### {TRIZ | Theory of Constraints | Systems Thinking | Other}
+- **Application:** {how it was applied}
+- **Insights Gained:** {what we learned}
+- **Resolution Approach:** {how challenge was resolved}
+
+## Alternatives Explored
+
+{For each alternative:}
+### Alternative: {approach name}
+- **Description:** {what it involves}
+- **Pros:** {advantages}
+- **Cons:** {disadvantages}
+- **Why Not Chosen:** {rationale}
+
+## Chosen Approach
+
+**Solution:** {describe chosen approach}
+
+**Rationale:**
+{Why this approach is best:}
+- Technical fit
+- Trade-offs accepted
+- Risks mitigated
+- Innovation level (incremental/breakthrough)
+
+## Remaining Uncertainties
+
+{List any open questions or areas needing more research:}
+- {uncertainty 1}
+- {uncertainty 2}
+- {etc.}
+
+## Innovation Assessment
+
+- **Type:** {Incremental (10% better) | Breakthrough (10x better)}
+- **Justification:** {why this level is appropriate}
+- **Breakthrough Potential:** {what would make it breakthrough, if not already}
+
+---
+*Generated: {timestamp}*
+*Workflow: Solution Investigation — Step 03: Creative Problem-Solving*
+```
+
+### 8. Transition
 
 "**Excellent work. Let's synthesize everything we've learned.**
 
-Weaver will help us document the refined solution understanding."
+Chief Editor will help us document the refined solution understanding."
 
-### 8. Present Menu
+### 9. Present Menu
 
 **Select an Option:**
 - **[C]** Continue to Synthesis

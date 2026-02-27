@@ -18,7 +18,7 @@ Use Socratic questioning to deeply clarify the solution, uncover gaps and assump
 
 "**Welcome to Solution Investigation!** 🔍
 
-Before we document your solution, let's make sure we deeply understand it. I'm Catalyst, and I'll guide you through strategic questioning to refine your thinking.
+Before we document your solution, let's make sure we deeply understand it. I'm Solution Consultant, and I'll guide you through strategic questioning to refine your thinking.
 
 This isn't about finding 'right answers'—it's about uncovering the complete picture."
 
@@ -68,7 +68,23 @@ Does this accurately capture your solution? What am I missing?"
 
 **Refine based on feedback.**
 
-### 5. Transition
+### 5. Save Problem Framing
+
+"**Saving Problem Framing Analysis...**
+
+Output: `{output_folder}/solution-investigation/{solution-name}_problem-framing.md`
+
+This captures the Socratic dialogue and clarified understanding."
+
+**Create problem framing file with:**
+- Core problem and proposed solution
+- Success criteria
+- Key assumptions identified
+- Open questions
+- Constraints documented
+- Solution Consultant's questioning notes
+
+### 6. Transition
 
 "**Excellent foundation. Now let's understand your audiences.**
 

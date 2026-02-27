@@ -16,14 +16,14 @@ The SDA team operates like a professional editorial house with specialized roles
 
 | Agent | Icon | Role | Expertise |
 |-------|------|------|-----------|
-| **Catalyst** | 💡 | Socratic guide & elicitation specialist | Strategic questioning, gap analysis, solution clarification |
-| **Visionary** | 🔮 | Design thinking maestro | Empathy mapping, user-centered framing, human-centered design |
-| **Inventor** | 🧠 | Creative problem solver | TRIZ, Theory of Constraints, systems thinking |
-| **Chronicler** | 📜 | Technical integrity guardian | Technical documentation, architectural accuracy, R&D perspective |
-| **Envoy** | 🕊️ | Value-focused narrator | Business value translation, strategic communication |
-| **Weaver** | 🧵 | Master agent & synthesis specialist | Document synthesis, formatting, technical writing polish |
-| **Client-Advocate** | — | Professional skeptic & customer defender | Customer perspective, skeptical challenge, clarity validation |
-| **Product-Guard** | — | R&D & roadmap defender | Technical feasibility, roadmap alignment, product integrity |
+| **Solution Consultant** | 💡 | Socratic guide & elicitation specialist | Strategic questioning, gap analysis, solution clarification |
+| **Solution Designer** | 🔮 | Design thinking maestro | Empathy mapping, user-centered framing, human-centered design |
+| **Technical Wizard** | 🧠 | Creative problem solver | TRIZ, Theory of Constraints, systems thinking |
+| **Technical Scribe** | 📜 | Technical integrity guardian | Technical documentation, architectural accuracy, R&D perspective |
+| **Value Narrator** | 🕊️ | Value-focused narrator | Business value translation, strategic communication |
+| **Chief Editor** | 🧵 | Master agent & synthesis specialist | Document synthesis, formatting, technical writing polish |
+| **Value Analyst** | — | Professional skeptic & customer defender | Customer perspective, skeptical challenge, clarity validation |
+| **Product Manager** | — | R&D & roadmap defender | Technical feasibility, roadmap alignment, product integrity |
 
 ## Workflows
 
@@ -32,6 +32,44 @@ The SDA team operates like a professional editorial house with specialized roles
 | **SDA Main** | Complete dual-audience solution documentation | Creating enterprise proposals, RFP responses, architecture docs |
 | **Solution Investigation** | Deep exploration and refinement before documentation | Solution design needs clarification or creative problem-solving |
 | **Review Only** | Adversarial review of existing documents | Auditing existing documentation for gaps and clarity |
+
+## Prerequisites
+
+### Required for Document Conversion
+
+SDA can export solution documents to OpenDocument formats (ODT/ODP) which open natively in Microsoft Office, LibreOffice, and Google Workspace.
+
+**Install pandoc (recommended options):**
+
+1. **GitHub releases** (latest features): https://github.com/jgm/pandoc/releases/
+   - Download installer for your platform (Windows .msi, macOS .pkg, Linux .deb/.rpm)
+   - Always has latest features and bug fixes
+
+2. **Conda** (up-to-date, cross-platform):
+   ```bash
+   conda install pandoc
+   # or from conda-forge for latest
+   conda install -c conda-forge pandoc
+   ```
+
+3. **Alternative package managers** (may be outdated):
+   ```bash
+   # macOS
+   brew install pandoc
+   
+   # Ubuntu/Debian
+   sudo apt install pandoc
+   
+   # Windows
+   choco install pandoc
+   ```
+
+**Verify installation:**
+```bash
+pandoc --version
+```
+
+**Note:** Pandoc is only required if you want to generate ODT (document) or ODP (presentation) outputs. Markdown output always works without pandoc.
 
 ## Installation
 
@@ -48,9 +86,9 @@ Select **Solution Document Architect** from the modules list.
 After installing BMad Method with SDA, activate any agent to begin:
 
 ```
-/catalyst           # Start with Socratic questioning to clarify your solution
-/weaver             # Launch the full SDA workflow for document creation
-/client-advocate    # Review an existing document from customer perspective
+/solution-consultant    # Start with Socratic questioning to clarify your solution
+/chief-editor           # Launch the full SDA workflow for document creation
+/value-analyst          # Review an existing document from customer perspective
 ```
 
 Or launch workflows directly:
@@ -69,7 +107,7 @@ Or launch workflows directly:
 | Responding to RFPs | SDA Main |
 | Documenting architecture decisions | SDA Main |
 | Solution design unclear or needs refinement | Solution Investigation |
-| Need creative problem-solving on solution approach | Solution Investigation (with Inventor) |
+| Need creative problem-solving on solution approach | Solution Investigation (with Technical Wizard) |
 | Reviewing existing documentation quality | Review Only |
 | Feature launch documentation (dual audience) | SDA Main |
 | Need both technical depth AND business clarity | SDA Main |
@@ -77,33 +115,33 @@ Or launch workflows directly:
 ## Example: Enterprise RFP Response
 
 ```
-You: /catalyst
-Catalyst: Let's clarify your solution approach. What problem are we solving?
+You: /solution-consultant
+Solution Consultant: Let's clarify your solution approach. What problem are we solving?
 You: Cloud migration for enterprise client with compliance requirements
-Catalyst: [Socratic questioning to uncover gaps and assumptions]
+Solution Consultant: [Socratic questioning to uncover gaps and assumptions]
         "What specific compliance frameworks apply?"
         "What's the migration timeline constraint?"
         "Which workloads are in scope?"
 
-You: /weaver Start the main SDA workflow
-Weaver: [Launches full workflow]
+You: /chief-editor Start the main SDA workflow
+Chief Editor: [Launches full workflow]
         Phase 0: Subject Definition
         Phase 1: Knowledge Review
         Phase 2: Outline Proposal
         Phase 3: Parallel Drafting
         
-Chronicler: [Drafts technical architecture section]
-Envoy: [Drafts business value narrative simultaneously]
+Technical Scribe: [Drafts technical architecture section]
+Value Narrator: [Drafts business value narrative simultaneously]
 
-Client-Advocate: [Reviews with skepticism]
+Value Analyst: [Reviews with skepticism]
                 "Will the client understand this?" 
                 "Where's the risk mitigation?"
                 
-Product-Guard: [Validates technical feasibility]
+Product Manager: [Validates technical feasibility]
               "Is this roadmap-aligned?"
               "Can we deliver this?"
 
-Weaver: [Synthesizes everything into polished final document]
+Chief Editor: [Synthesizes everything into polished final document]
         ✓ Document saved to output folder
 ```
 
@@ -115,12 +153,12 @@ Result: **"This document is better than anything I could write alone."**
 
 **Complete dual-audience documentation creation:**
 
-- **Phase 0:** Subject Definition — Catalyst leads Socratic questioning to clarify solution
+- **Phase 0:** Subject Definition — Solution Consultant leads Socratic questioning to clarify solution
 - **Phase 1:** Knowledge Review — Technical audit and source material validation  
-- **Phase 2:** Outline Proposal — Collaborative outline between Chronicler and Envoy
+- **Phase 2:** Outline Proposal — Collaborative outline between Technical Scribe and Value Narrator
 - **Phase 3:** Parallel Drafting — Side-by-side technical + business narratives
-- **Phase 4:** Adversarial Review — Client-Advocate and Product-Guard stress-test the document
-- **Phase 5:** Synthesis & Formatting — Weaver unifies into polished final document
+- **Phase 4:** Adversarial Review — Value Analyst and Product Manager stress-test the document
+- **Phase 5:** Synthesis & Formatting — Chief Editor unifies into polished final document
 
 **Outputs:** Complete solution document in `{output_folder}/solution-descriptions/`
 
@@ -128,9 +166,9 @@ Result: **"This document is better than anything I could write alone."**
 
 **Deep solution exploration before documentation:**
 
-- Catalyst questions assumptions and identifies gaps
-- Visionary provides empathy mapping and user-centered framing
-- Inventor applies TRIZ and systematic problem-solving
+- Solution Consultant questions assumptions and identifies gaps
+- Solution Designer provides empathy mapping and user-centered framing
+- Technical Wizard applies TRIZ and systematic problem-solving
 - Result: Refined solution understanding ready for documentation
 
 **Use when:** Solution design needs clarification, creative problem-solving, or alternative exploration
@@ -139,8 +177,8 @@ Result: **"This document is better than anything I could write alone."**
 
 **Adversarial audit of existing documents:**
 
-- Client-Advocate challenges from customer perspective
-- Product-Guard validates from R&D and roadmap perspective
+- Value Analyst challenges from customer perspective
+- Product Manager validates from R&D and roadmap perspective
 - No new document creation — pure quality assurance
 - Result: Review report with findings, gaps, and recommendations
 
@@ -150,16 +188,16 @@ Result: **"This document is better than anything I could write alone."**
 
 **Productive Tension is a Feature:**
 
-During drafting, Chronicler and Envoy engage in visible productive conflict:
+During drafting, Technical Scribe and Value Narrator engage in visible productive conflict:
 
-- **Chronicler:** "We need detailed architectural patterns"
-- **Envoy:** "But will executives care about microservices topology?"
+- **Technical Scribe:** "We need detailed architectural patterns"
+- **Value Narrator:** "But will executives care about microservices topology?"
 
 This debate strengthens documents by forcing both technical depth AND business clarity.
 
 **Adversarial Review:**
 
-Client-Advocate operates as a professional skeptic:
+Value Analyst operates as a professional skeptic:
 
 - Challenges every claim
 - Questions technical jargon
@@ -170,9 +208,9 @@ Client-Advocate operates as a professional skeptic:
 
 SDA works seamlessly with BMAD Party Mode:
 
-- **Innovation Support Team:** Catalyst + Visionary + Inventor for solution exploration
-- **Production Team:** Chronicler + Envoy for parallel drafting
-- **Review Board:** Client-Advocate + Product-Guard for adversarial audit
+- **Innovation Support Team:** Solution Consultant + Solution Designer + Technical Wizard for solution exploration
+- **Production Team:** Technical Scribe + Value Narrator for parallel drafting
+- **Review Board:** Value Analyst + Product Manager for adversarial audit
 
 Activate Party Mode with any agent combination for collaborative sessions.
 

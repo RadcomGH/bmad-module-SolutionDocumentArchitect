@@ -8,3 +8,22 @@ user_name: Jasong
 communication_language: English
 document_output_language: English
 output_folder: "{project-root}/_bmad-output"
+
+# SDA Module Paths
+installed_path: "{project-root}/bmad/_bmad/sda"
+static_knowledge_path: "{project-root}/bmad/_bmad/sda/knowledge"
+sda_memory_path: "{project-root}/bmad/_bmad/_memory/_sda"
+agents_memory_path: "{project-root}/bmad/_bmad/_memory/_sda/agents"
+shared_knowledge_path: "{project-root}/bmad/_bmad/_memory/_sda/shared-knowledge"
+sda_output_path: "{project-root}/bmad/_bmad-output/sda"
+
+# Output Format Preferences
+# Markdown is always generated; ODT/ODP are optional
+default_output_formats:
+  - markdown  # Always generated
+  - odt       # Optional: OpenDocument Text (opens in Word/LibreOffice)
+  - odp       # Optional: OpenDocument Presentation (opens in PowerPoint/Impress)
+
+# Template Paths (optional - uses pandoc defaults if not specified)
+odt_template: "{installed_path}/templates/solution-document-template.odt"
+odp_template: "{installed_path}/templates/solution-presentation-template.odp"

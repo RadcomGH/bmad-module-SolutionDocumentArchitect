@@ -18,7 +18,7 @@ Present the final document, gather user feedback, provide next steps, and close 
 
 "**🎉 The Solution Document is Complete! 🎉**
 
-**Switching back to Weaver** 🧵
+**Switching back to Chief Editor** 🧵
 
 'We did it! After {workflow_duration}, we've created a solution document that's better than anything one person could write alone.
 
@@ -47,14 +47,14 @@ Let me show you what we've accomplished...'
 - Both perspectives integrated seamlessly
 
 📜🕊️ **Dual Perspectives Unified**
-- Technical accuracy from Chronicler
-- Business value from Envoy
+- Technical accuracy from Technical Scribe
+- Business value from Value Narrator
 - Productive debates strengthened the content
 - Review Board caught blind spots
 
 🛡️ **Battle-Tested**
-- Client-Advocate: {client_advocate_findings} customer concerns addressed
-- Product-Guard: {product_guard_findings} reality checks applied
+- Value Analyst: {client_advocate_findings} customer concerns addressed
+- Product Manager: {product_guard_findings} reality checks applied
 - Hardened against skeptical readers
 
 🧵 **Professionally Polished**
@@ -123,7 +123,73 @@ Let me show you what we've accomplished...'
 
 **Store feedback in workflow state for future improvement.**
 
-### 4. Artifacts Summary
+### 4. Output Format Conversion
+
+**Chief Editor:**
+
+"**Converting to requested output formats...**"
+
+**Check workflow state for output_formats: [markdown, odt, odp]**
+
+#### Always Present:
+"✅ **Markdown:** `{subject_name}_description.md`"
+
+#### If 'odt' in output_formats:
+
+"**Converting to ODT (OpenDocument Text)...**"
+
+**Execute task: convert-output-format**
+- source_md: `{output_folder}/solution-descriptions/{subject_name}_description.md`
+- output_format: `odt`
+- template: `{odt_template}` (from config.yaml)
+
+**On success:**
+"✅ **ODT Document:** `{subject_name}_description.odt` ({file_size} MB)
+   Opens in: Microsoft Word, LibreOffice Writer, Google Docs"
+
+**On failure:**
+"⚠️ **ODT conversion failed:** {error_message}
+   Markdown version available as fallback.
+   
+   **Troubleshooting:**
+   - Verify pandoc is installed: `pandoc --version`
+   - See README Prerequisites section for installation
+   - Check error details above"
+
+#### If 'odp' in output_formats:
+
+"**Converting to ODP (OpenDocument Presentation)...**"
+
+**Execute task: convert-output-format**
+- source_md: `{output_folder}/solution-descriptions/{subject_name}_description.md`
+- output_format: `odp`
+- template: `{odp_template}` (from config.yaml)
+
+**On success:**
+"✅ **ODP Presentation:** `{subject_name}_description.odp` ({slide_count} slides, {file_size} MB)
+   Opens in: Microsoft PowerPoint, LibreOffice Impress, Google Slides"
+
+**On failure:**
+"⚠️ **ODP conversion failed:** {error_message}
+   Markdown version available as fallback.
+   
+   **Troubleshooting:**
+   - Verify pandoc is installed: `pandoc --version`
+   - See README Prerequisites section for installation
+   - Check error details above"
+
+#### Conversion Complete:
+
+"**📁 All formats saved to:**
+`{output_folder}/solution-descriptions/`
+
+**📄 Generated Files:**"
+
+{List all successfully generated files with formats}
+
+"💡 **Tip:** ODT and ODP files open natively in Microsoft Office and are fully editable."
+
+### 5. Artifacts Summary
 
 "**Complete Workflow Artifacts:**
 
@@ -143,7 +209,7 @@ Throughout this workflow, we created several supporting files:
 
 🔍 **Review Board Findings**
 `{output_folder}/solution-descriptions/{subject_name}_review_findings.md`
-- Client-Advocate and Product-Guard audit results
+- Value Analyst and Product Manager audit results
 
 📄 **Final Document**
 `{output_folder}/solution-descriptions/{subject_name}_description.md`
@@ -151,7 +217,7 @@ Throughout this workflow, we created several supporting files:
 
 **All artifacts saved for future reference.**"
 
-### 5. Next Steps Guidance
+### 6. Next Steps Guidance
 
 "**What's Next?**
 
@@ -187,22 +253,22 @@ Now that you have a publication-ready document, here are common next steps:
 'Before we close, let me recognize the team that made this possible:'
 
 **Innovation Support:**
-💡 **Catalyst** — Asked the right questions to define the solution clearly
+💡 **Solution Consultant** — Asked the right questions to define the solution clearly
 {If solution investigation used}
-🔮 **Visionary** — Applied design thinking for deep problem exploration
-🧠 **Inventor** — Contributed creative problem-solving insights
+🔮 **Solution Designer** — Applied design thinking for deep problem exploration
+🧠 **Technical Wizard** — Contributed creative problem-solving insights
 
 **Production Team:**
-📜 **Chronicler** — Ensured technical accuracy and architectural integrity
-🕊️ **Envoy** — Translated complex technology into clear value propositions
-💡 **Catalyst** — Coordinated drafting and resolved creative tensions
+📜 **Technical Scribe** — Ensured technical accuracy and architectural integrity
+🕊️ **Value Narrator** — Translated complex technology into clear value propositions
+💡 **Solution Consultant** — Coordinated drafting and resolved creative tensions
 
 **Review Board:**
-👥 **Client-Advocate** — Caught {client_advocate_findings} customer concerns
-🛡️ **Product-Guard** — Verified {product_guard_findings} technical realities
+👥 **Value Analyst** — Caught {client_advocate_findings} customer concerns
+🛡️ **Product Manager** — Verified {product_guard_findings} technical realities
 
 **Synthesis:**
-🧵 **Weaver** — Unified dual perspectives into polished final document
+🧵 **Chief Editor** — Unified dual perspectives into polished final document
 
 **And most importantly:**
 👤 **{user_name}** — Provided subject expertise, validated direction, made key decisions
@@ -266,12 +332,12 @@ statistics:
   fixes_applied: {count}
 
 team_contributions:
-  catalyst: {count} interventions
-  chronicler: {count} sections
-  envoy: {count} sections
-  client_advocate: {count} findings
-  product_guard: {count} findings
-  weaver: 1 synthesis
+  solution_consultant: {count} interventions
+  technical_scribe: {count} sections
+  value_narrator: {count} sections
+  value_analyst: {count} findings
+  product_manager: {count} findings
+  chief_editor: 1 synthesis
 
 user_feedback: {captured_feedback}
 ```

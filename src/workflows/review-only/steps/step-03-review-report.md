@@ -24,7 +24,7 @@ Create structured report:
 
 **Document:** {document name/title}
 **Review Date:** {date}
-**Reviewed By:** Review Board (Client-Advocate + Product-Guard)
+**Reviewed By:** Review Board (Value Analyst + Product Manager)
 **Review Configuration:**
 - Focus: {full/customer/technical}
 - Severity Threshold: {rigorous/balanced/critical-only}
@@ -60,7 +60,7 @@ Create structured report:
 
 **Severity:** Critical
 **Category:** {Clarity/Accuracy/Value/Feasibility/etc.}
-**Found By:** {Client-Advocate/Product-Guard/Both}
+**Found By:** {Value Analyst/Product Manager/Both}
 
 **Issue:**
 {Detailed description}
@@ -94,12 +94,12 @@ Create structured report:
 
 ## What's Working Well (✅ Strengths)
 
-**Client-Advocate Positive Feedback:**
+**Value Analyst Positive Feedback:**
 - {strength 1}
 - {strength 2}
 - {strength 3}
 
-**Product-Guard Positive Feedback:**
+**Product Manager Positive Feedback:**
 - {strength 1}
 - {strength 2}
 - {strength 3}
@@ -110,7 +110,7 @@ Create structured report:
 
 ## Review Board Perspectives
 
-### Client-Advocate (Customer Perspective) Full Findings
+### Value Analyst (Customer Perspective) Full Findings
 
 **Clarity & Understanding:** {summary}
 {detailed findings}
@@ -128,7 +128,7 @@ Create structured report:
 
 ---
 
-### Product-Guard (R&D Perspective) Full Findings
+### Product Manager (R&D Perspective) Full Findings
 
 **Technical Accuracy:** {summary}
 {detailed findings}
@@ -271,7 +271,7 @@ Select option:"
 
 **IF 3 (Start Revisions):**
 - "Which section needs the most work?"
-- Offer to activate Chronicler, Envoy, or Weaver
+- Offer to activate Technical Scribe, Value Narrator, or Chief Editor
 - Can run targeted SDA workflow phases on specific sections
 - Reference review findings during revision
 
@@ -293,8 +293,8 @@ Select option:"
 - Clear next steps
 
 **Your document was challenged by:**
-- 🧐 Client-Advocate (Professional Skeptic)
-- 🛡️ Product-Guard (R&D Defender)
+- 🧐 Value Analyst (Professional Skeptic)
+- 🛡️ Product Manager (R&D Defender)
 
 Documents that pass this review are bulletproof.
 

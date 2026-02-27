@@ -21,20 +21,20 @@ The SDA Main workflow has been converted from single-file format to BMAD-complia
 
 #### Phase 0: Subject Definition
 - **step-00-welcome.md** — Welcome, workflow orientation, mode selection
-- **step-01-subject-definition.md** — Catalyst questioning, solution clarification, optional SI workflow routing
+- **step-01-subject-definition.md** — Solution Consultant questioning, solution clarification, optional SI workflow routing
 
 #### Phase 1: Knowledge Review & Audience Configuration
 - **step-02-knowledge-review.md** — Workspace scanning, technical findings report, validation
 - **step-03-audience-configuration.md** — Primary/secondary audience selection, lead/support drafter assignment
 
 #### Phase 2: Outline Creation
-- **step-04-outline-proposal.md** — Envoy narrative arc + Chronicler technical skeleton → integrated outline
+- **step-04-outline-proposal.md** — Value Narrator narrative arc + Technical Scribe technical skeleton → integrated outline
 - **step-05-outline-approval.md** — User review, refinement loop, approval
 
 #### Phase 3: Drafting & Review
 - **step-06-drafting-setup.md** — Drafting mode selection, parameters, section assignment, document initialization
 - **step-07-parallel-drafting.md** — Simultaneous drafting by lead/support agents, cross-review, creative tension resolution (20-45 min)
-- **step-08-adversarial-review.md** — Client-Advocate + Product-Guard audit, findings presentation, fix application
+- **step-08-adversarial-review.md** — Value Analyst + Product Manager audit, findings presentation, fix application
 
 #### Phase 4: Synthesis & Completion
 - **step-09-synthesis-formatting.md** — Flow analysis, visual hierarchy, consistency pass, polish, final synthesis
@@ -45,13 +45,13 @@ The SDA Main workflow has been converted from single-file format to BMAD-complia
 ## Key Features
 
 ### Dual-Perspective Architecture
-- **Lead Drafter** (Chronicler OR Envoy) writes primary narrative
+- **Lead Drafter** (Technical Scribe OR Value Narrator) writes primary narrative
 - **Support Drafter** adds complementary perspective
-- **Catalyst** coordinates and resolves creative tensions
+- **Solution Consultant** coordinates and resolves creative tensions
 
 ### Adversarial Review Layer
-- **Client-Advocate** challenges from customer perspective
-- **Product-Guard** validates against technical/business reality
+- **Value Analyst** challenges from customer perspective
+- **Product Manager** validates against technical/business reality
 - Catches blind spots before publication
 
 ### Flexible Modes
@@ -60,8 +60,8 @@ The SDA Main workflow has been converted from single-file format to BMAD-complia
 - **Watch** — Stream real-time updates
 
 ### Audience-First Design
-- **Customer Primary** → Envoy leads, technical depth in expandable sections
-- **R&D Primary** → Chronicler leads, business value in callouts
+- **Customer Primary** → Value Narrator leads, technical depth in expandable sections
+- **R&D Primary** → Technical Scribe leads, business value in callouts
 
 ---
 
@@ -113,18 +113,18 @@ All saved to: `{output_folder}/solution-descriptions/`
 ## Agent Participation
 
 ### Innovation Support Team
-- 💡 **Catalyst** — Subject definition questioning, drafting coordination, conflict resolution
+- 💡 **Solution Consultant** — Subject definition questioning, drafting coordination, conflict resolution
 
 ### Production Team
-- 📜 **Chronicler** — Technical integrity, R&D perspective, architectural accuracy
-- 🕊️ **Envoy** — Business value translation, customer perspective, clarity
+- 📜 **Technical Scribe** — Technical integrity, R&D perspective, architectural accuracy
+- 🕊️ **Value Narrator** — Business value translation, customer perspective, clarity
 
 ### Review Board
-- 👥 **Client-Advocate** — Customer skepticism, clarity challenges
-- 🛡️ **Product-Guard** — Technical accuracy validation, reality checks
+- 👥 **Value Analyst** — Customer skepticism, clarity challenges
+- 🛡️ **Product Manager** — Technical accuracy validation, reality checks
 
 ### Synthesis
-- 🧵 **Weaver** — Final synthesis, formatting, polish, workflow orchestration
+- 🧵 **Chief Editor** — Final synthesis, formatting, polish, workflow orchestration
 
 ---
 
@@ -156,7 +156,7 @@ All saved to: `{output_folder}/solution-descriptions/`
 
 1. **Full Workflow Execution** — Run complete workflow with test subject
 2. **Interactive Mode** — Test pause/resume at decision points
-3. **Adversarial Review** — Verify Client-Advocate and Product-Guard logic
+3. **Adversarial Review** — Verify Value Analyst and Product Manager logic
 4. **Refinement Loops** — Test outline refinement and section editing
 5. **Both Audience Types** — Test Customer Primary AND R&D Primary paths
 6. **Solution Investigation Integration** — Test optional workflow branching

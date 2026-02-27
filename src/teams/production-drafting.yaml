@@ -4,8 +4,8 @@ bundle:
   icon: 🏗️
   description: Creating dual-audience narratives with productive tension between technical and business perspectives
 agents:
-  - catalyst
-  - chronicler
-  - envoy
-  - weaver
+  - solution-consultant
+  - technical-scribe
+  - value-narrator
+  - chief-editor
 party: "./default-party.csv"

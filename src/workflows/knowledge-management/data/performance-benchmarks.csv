@@ -1,0 +1,13 @@
+Mode,DocumentCount,ExpectedDuration,MinDuration,MaxDuration,Notes
+init,<20,15s,10s,20s,"First-time setup with small document set"
+init,20-100,60s,30s,90s,"Medium-sized document corpus"
+init,100+,180s,120s,300s,"Large document corpus (100+ docs)"
+update,<20,3s,2s,5s,"Incremental update, few changes"
+update,20-100,10s,5s,15s,"Medium corpus with typical changes"
+update,100+,22s,15s,30s,"Large corpus with multiple changes"
+rebuild,<20,22s,15s,30s,"Complete rebuild of small corpus"
+rebuild,20-100,82s,45s,120s,"Medium corpus full rebuild"
+rebuild,100+,300s,180s,420s,"Large corpus full rebuild (3-7 minutes)"
+validate,<20,2s,1s,3s,"Quick validation check"
+validate,20-100,6s,3s,10s,"Medium corpus validation"
+validate,100+,20s,10s,30s,"Large corpus validation"

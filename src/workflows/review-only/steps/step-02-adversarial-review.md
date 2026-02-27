@@ -1,6 +1,6 @@
 ---
 name: 'step-02-adversarial-review'
-description: 'Client-Advocate and Product-Guard review document'
+description: 'Value Analyst and Product Manager review document'
 nextStepFile: './step-03-review-report.md'
 ---
 
@@ -22,9 +22,9 @@ The Review Board will now examine your document. Expect rigorous challenge—thi
 
 ---
 
-### 2. CLIENT-ADVOCATE REVIEW (if included)
+### 2. VALUE ANALYST REVIEW (if included)
 
-"**Client-Advocate Review: Customer Perspective** 🧐
+"**Value Analyst Review: Customer Perspective** 🧐
 
 I'm reading this as a skeptical customer. Every claim will be challenged."
 
@@ -84,7 +84,7 @@ I'm reading this as a skeptical customer. Every claim will be challenged."
 
 ---
 
-**Client-Advocate Summary:**
+**Value Analyst Summary:**
 
 **Critical Issues:** {count} — Must fix before publication
 {list}
@@ -100,9 +100,9 @@ I'm reading this as a skeptical customer. Every claim will be challenged."
 
 ---
 
-### 3. PRODUCT-GUARD REVIEW (if included)
+### 3. PRODUCT MANAGER REVIEW (if included)
 
-"**Product-Guard Review: R&D Perspective** 🛡️
+"**Product Manager Review: R&D Perspective** 🛡️
 
 I'm validating technical accuracy and roadmap alignment. Every technical claim will be scrutinized."
 
@@ -162,7 +162,7 @@ I'm validating technical accuracy and roadmap alignment. Every technical claim w
 
 ---
 
-**Product-Guard Summary:**
+**Product Manager Summary:**
 
 **Critical Issues:** {count} — Must fix (technical accuracy errors, over-promising)
 {list}
@@ -182,13 +182,13 @@ I'm validating technical accuracy and roadmap alignment. Every technical claim w
 
 "**Review Board Consensus:**
 
-Client-Advocate and Product-Guard have completed their review. Here's where they agree:
+Value Analyst and Product Manager have completed their review. Here's where they agree:
 
 **Shared Concerns:**
 {Issues both reviewers identified}
 
 **Tension Points:**
-{Where Client-Advocate wants more clarity but Product-Guard defends technical accuracy, or vice versa}
+{Where Value Analyst wants more clarity but Product Manager defends technical accuracy, or vice versa}
 
 **Overall Document Health:**
 - 🔴 **Critical issues:** {count} — Cannot publish without fixes

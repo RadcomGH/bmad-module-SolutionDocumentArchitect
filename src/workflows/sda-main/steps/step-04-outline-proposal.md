@@ -8,7 +8,7 @@ nextStepFile: './step-05-outline-approval.md'
 
 ## STEP GOAL
 
-Generate an integrated table of contents that serves both audiences. Envoy proposes the "Narrative Arc" (value story), Chronicler proposes the "Technical Skeleton" (system structure), then merge both into a unified outline.
+Generate an integrated table of contents that serves both audiences. Value Narrator proposes the "Narrative Arc" (value story), Technical Scribe proposes the "Technical Skeleton" (system structure), then merge both into a unified outline.
 
 ---
 
@@ -21,22 +21,22 @@ Generate an integrated table of contents that serves both audiences. Envoy propo
 Before drafting the full document, we need agreement on structure. This prevents wasted effort and ensures both perspectives are properly integrated.
 
 **The Process:**
-1. Envoy proposes the narrative arc (the story)
-2. Chronicler proposes the technical skeleton (the structure)
+1. Value Narrator proposes the narrative arc (the story)
+2. Technical Scribe proposes the technical skeleton (the structure)
 3. We merge both into one integrated outline
 4. You approve (or refine) the plan
 
 Let's begin..."
 
-### 2. Envoy's Narrative Arc
+### 2. Value Narrator's Narrative Arc
 
-"**Switching to Envoy** 🕊️ — Your business value translator.
+"**Switching to Value Narrator** 🕊️ — Your business value translator.
 
 'Hello! Based on the subject definition and audience configuration, here's the narrative arc I propose:
 
 ---
 
-## Envoy's Narrative Arc
+## Value Narrator's Narrative Arc
 
 **Document Purpose:** {derived from subject and primary_audience}
 
@@ -61,21 +61,21 @@ Let's begin..."
 **Key Value Propositions to Emphasize:**
 {List 3-5 value points from subject definition}
 
-**Narrative Tone:** {Visionary | Pragmatic | Educational} based on {subject_state}
+**Narrative Tone:** {Solution Designer | Pragmatic | Educational} based on {subject_state}
 
 This arc ensures readers understand WHY this solution matters before diving into HOW it works.'
 
-**Envoy's proposal captured.**"
+**Value Narrator's proposal captured.**"
 
-### 3. Chronicler's Technical Skeleton
+### 3. Technical Scribe's Technical Skeleton
 
-"**Switching to Chronicler** 📜 — Your technical architect.
+"**Switching to Technical Scribe** 📜 — Your technical architect.
 
 'Now for the technical skeleton. Here's the structural framework I propose:
 
 ---
 
-## Chronicler's Technical Skeleton
+## Technical Scribe's Technical Skeleton
 
 **Document Purpose:** Technical specification for {subject_name}
 
@@ -109,7 +109,7 @@ This arc ensures readers understand WHY this solution matters before diving into
 
 This skeleton ensures technical reviewers can validate correctness and feasibility.'
 
-**Chronicler's proposal captured.**"
+**Technical Scribe's proposal captured.**"
 
 ### 4. Integrated Outline Generation
 
@@ -126,74 +126,74 @@ This skeleton ensures technical reviewers can validate correctness and feasibili
 
 {If Customer Primary}
 **1. Executive Summary**
-   - The Challenge (Envoy)
-   - The Solution (Envoy + Chronicler high-level)
-   - Key Benefits (Envoy)
+   - The Challenge (Value Narrator)
+   - The Solution (Value Narrator + Technical Scribe high-level)
+   - Key Benefits (Value Narrator)
 
 **2. Solution Overview**
-   - How {subject} Works (Envoy narrative)
-   - 📜 **Technical Detail:** Architecture Overview (Chronicler - expandable)
+   - How {subject} Works (Value Narrator narrative)
+   - 📜 **Technical Detail:** Architecture Overview (Technical Scribe - expandable)
 
 **3. Core Capabilities**
    {For each major capability}
-   - Capability Description (Envoy)
-   - 📜 **Technical Detail:** Implementation (Chronicler - expandable)
+   - Capability Description (Value Narrator)
+   - 📜 **Technical Detail:** Implementation (Technical Scribe - expandable)
 
 **4. Value & Outcomes**
-   - Business Impact (Envoy)
-   - Use Cases (Envoy + Chronicler examples)
-   - 📜 **Technical Detail:** Performance Characteristics (Chronicler)
+   - Business Impact (Value Narrator)
+   - Use Cases (Value Narrator + Technical Scribe examples)
+   - 📜 **Technical Detail:** Performance Characteristics (Technical Scribe)
 
 **5. Technical Foundation**
-   - 📜 Components & Architecture (Chronicler)
-   - 📜 Integration & APIs (Chronicler)
-   - 📜 Security Model (Chronicler)
+   - 📜 Components & Architecture (Technical Scribe)
+   - 📜 Integration & APIs (Technical Scribe)
+   - 📜 Security Model (Technical Scribe)
 
 **6. Getting Started**
-   - Implementation Path (Envoy + Chronicler)
-   - Next Steps (Envoy)
+   - Implementation Path (Value Narrator + Technical Scribe)
+   - Next Steps (Value Narrator)
 
 {If R&D Primary}
 **1. Overview**
-   - Technical Summary (Chronicler)
-   - 🕊️ **Business Context:** Why This Matters (Envoy callout)
-   - Architecture Diagram (Chronicler)
+   - Technical Summary (Technical Scribe)
+   - 🕊️ **Business Context:** Why This Matters (Value Narrator callout)
+   - Architecture Diagram (Technical Scribe)
 
 **2. System Architecture**
-   - Core Components (Chronicler)
-   - Component Interactions (Chronicler)
-   - 🕊️ **Value Highlight:** Key Benefits (Envoy callout)
+   - Core Components (Technical Scribe)
+   - Component Interactions (Technical Scribe)
+   - 🕊️ **Value Highlight:** Key Benefits (Value Narrator callout)
 
 **3. Component Deep-Dive**
    {For each major component}
-   - Technical Specification (Chronicler)
-   - Implementation Details (Chronicler)
-   - 🕊️ **Use Case:** Where This Shines (Envoy callout)
+   - Technical Specification (Technical Scribe)
+   - Implementation Details (Technical Scribe)
+   - 🕊️ **Use Case:** Where This Shines (Value Narrator callout)
 
 **4. Implementation Guide**
-   - Configuration (Chronicler)
-   - Deployment (Chronicler)
-   - Integration Patterns (Chronicler)
+   - Configuration (Technical Scribe)
+   - Deployment (Technical Scribe)
+   - Integration Patterns (Technical Scribe)
 
 **5. Operations & Performance**
-   - Performance Characteristics (Chronicler)
-   - Scaling Considerations (Chronicler)
-   - 🕊️ **ROI Impact:** Cost & Efficiency Gains (Envoy)
+   - Performance Characteristics (Technical Scribe)
+   - Scaling Considerations (Technical Scribe)
+   - 🕊️ **ROI Impact:** Cost & Efficiency Gains (Value Narrator)
 
 **6. Security & Compliance**
-   - Security Model (Chronicler)
-   - Compliance Considerations (Chronicler)
+   - Security Model (Technical Scribe)
+   - Compliance Considerations (Technical Scribe)
 
 **7. Appendices**
-   - 🕊️ Executive Summary (Envoy - 1 page)
-   - API Reference (Chronicler)
-   - Configuration Examples (Chronicler)
+   - 🕊️ Executive Summary (Value Narrator - 1 page)
+   - API Reference (Technical Scribe)
+   - Configuration Examples (Technical Scribe)
 
 ---
 
 **Outline Notes:**
-- 📜 = Chronicler-led section (technical depth)
-- 🕊️ = Envoy-led section (business value)
+- 📜 = Technical Scribe-led section (technical depth)
+- 🕊️ = Value Narrator-led section (business value)
 - Expandable = Can be <details> block for Customer Primary docs
 - Callout = Highlighted box for R&D Primary docs
 
@@ -213,7 +213,58 @@ This skeleton ensures technical reviewers can validate correctness and feasibili
 
 **Review this outline.**"
 
-### 6. Present Menu
+### 6. Save Proposed Outline
+
+**Chief Editor:**
+
+"**Saving proposed outline for review...**
+
+Output: `{output_folder}/solution-descriptions/{subject_name}_outline.md`
+
+**Outline Structure:**
+- Audience focus: {primary_audience} primary, {secondary_audience} {secondary_importance}
+- Section count: {count}
+- Estimated length: {6-12 | 12-20 | 20-30} pages
+- Agent assignments documented
+- Narrative arc and technical skeleton integrated
+
+*This outline will guide the drafting phase and ensure both agents collaborate effectively.*"
+
+**Create file:** `{output_folder}/solution-descriptions/{subject_name}_outline.md`
+
+**Content:**
+```markdown
+# Outline Proposal: {subject_name}
+
+## Audience Configuration
+- **Primary Audience:** {primary_audience}
+- **Secondary Audience:** {secondary_audience} ({secondary_importance})
+- **Estimated Length:** {6-12 | 12-20 | 20-30} pages
+
+## Integrated Outline
+
+{Display the outline with:}
+- Section numbers and titles
+- Content descriptions
+- Agent assignments (VN/TS)
+- Audience served per section
+
+## Value Narrator's Narrative Arc
+{Copy Value Narrator's proposed arc}
+
+## Technical Scribe's Technical Skeleton
+{Copy Technical Scribe's proposed skeleton}
+
+## Integration Notes
+{How the two perspectives were integrated}
+{Any adjustments made to balance both viewpoints}
+
+---
+*Generated: {timestamp}*
+*Workflow: SDA Main — Step 04: Outline Proposal*
+```
+
+### 7. Present Menu
 
 **Select an Option:**
 - **[A]** Approve outline → Continue to Phase 3 (Drafting)
@@ -227,8 +278,8 @@ This skeleton ensures technical reviewers can validate correctness and feasibili
 
 ## SUCCESS METRICS
 
-✅ Envoy's narrative arc proposed
-✅ Chronicler's technical skeleton proposed
+✅ Value Narrator's narrative arc proposed
+✅ Technical Scribe's technical skeleton proposed
 ✅ Integrated outline generated
 ✅ Both perspectives properly represented
 ✅ Sections assigned to appropriate agents

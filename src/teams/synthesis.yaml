@@ -2,7 +2,7 @@
 bundle:
   name: Synthesis
   icon: 🧵
-  description: Final unification and polish - Master agent orchestrating complete workflow with editorial authority
+  description: Final unification and polish - Chief Editor orchestrating complete workflow with editorial authority
 agents:
-  - weaver
+  - chief-editor
 party: "./default-party.csv"
